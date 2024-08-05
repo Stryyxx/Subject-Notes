@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Study Notes</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body class="bg-gray-100 text-gray-800">
+		<!-- Navigation Bar -->
+		<nav class="bg-blue-600 text-white p-4 relative">
+			<div class="container mx-auto flex justify-between items-center">
+				<a href="#" class="text-2xl font-bold">Study Notes</a>
+				<div class="relative">
+					<button class="focus:outline-none" id="dropdownButton">Topics</button>
+					<div
+						class="absolute right-0 hidden bg-white text-gray-800 py-2 mt-1 rounded shadow-lg"
+						id="dropdown"
+						dir="rtl"
+					>
+						<a href="conversionme\thods.html" class="block px-4 py-2 hover:bg-gray-200">Conversion Methods</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Content -->
+		<div class="container mx-auto mt-8 p-4">
+			<h1 class="text-3xl font-bold mb-4">Conversion Methods</h1>
+			<p class="mb-4">
+				Conversion methods are how firms and enterprise roll out new features or systems to a platform or their users.
+			</p>
+			<h2 class="text-2xl font-bold mb-2 mt-8">Types of Conversion Methods</h2>
+			<p class="mb-4">There are several types of conversion methods, including:</p>
+			<ul class="list-disc ml-8">
+				<li>Direct Conversions</li>
+				<li>Phased Conversions</li>
+				<li>Parallel Conversions</li>
+				<li>Pilot Conversions</li>
+			</ul>
+			<h3 class="text-xl font-bold mb-2 mt-8">Direct Conversions</h3>
+			<p>
+				A direct conversion is when a company stops using the old system and starts using the new system at a specific
+				point in time. This can be risky because even with sufficient testing, it is impossible to make sure there are
+				no issues with the new system.
+			</p>
+			<h3 class="text-xl font-bold mb-2 mt-8">Phased Conversions</h3>
+			<p>
+				Phased conversion is a conversion that is slowly integrated with the new and slowly removes the old. An example
+				of this is a school has a new system to manage sports and each team’s athletes. The old system is paper and
+				pencil. Over time, a new system is introduced to manage students, their teams, seasons, and their coaches. At
+				ﬁrst, the new system manages teams. Then the new system manages seasons (and school terms). When users are
+				familiar with that process, the system is expanded to include the management of coaches, players, and events. At
+				the end of implementation, the new system manages everything related to student athletics and the old paper and
+				pencil system is no longer used.
+			</p>
+			<h3 class="text-xl font-bold mb-2 mt-8">Parallel Conversions</h3>
+			<p>
+				The new system is introduced while the old one is still in use. Both systems process all activity and the
+				results are compared. Once there is confidence that the new one operates properly, the old one is shut down.
+			</p>
+			<h3 class="text-xl font-bold mb-2 mt-8">Pilot Conversions</h3>
+			<p>
+				Pilot Conversions are when part of an organisation uses the new system while the rest of it continues to use the
+				old. This localises problems to the pilot group so support resources can focus on it. However, there can be
+				interface issues where organisational units share data.
+			</p>
+		</div>
+
+		<script>
+			// JavaScript for dropdown menu
+			document.getElementById("dropdownButton").addEventListener("click", function () {
+				document.getElementById("dropdown").classList.toggle("hidden");
+			});
+
+			// Close dropdown if clicked outside
+			document.addEventListener("click", function (e) {
+				const target = e.target;
+				if (!target.closest("nav")) {
+					document.getElementById("dropdown").classList.add("hidden");
+				}
+			});
+		</script>
+	</body>
+</html>
