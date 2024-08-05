@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Study Notes - Conversion Methods</title>
+		<title>Study Notes - Graph and Network Theory</title>
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="styles.css" />
 	</head>
@@ -11,7 +11,7 @@
 		<!-- Navigation Bar -->
 		<nav class="bg-blue-600 text-white p-4 relative">
 			<div class="container mx-auto flex justify-between items-center">
-				<a href="#" class="text-2xl font-bold">Study Notes</a>
+				<a href="index.html" class="text-2xl font-bold">Study Notes</a>
 				<div class="relative">
 					<button class="focus:outline-none" id="dropdownButton">Topics</button>
 					<div
@@ -40,34 +40,30 @@
 
 		<!-- Content -->
 		<div class="container mx-auto mt-8 p-4">
-			<h1 class="text-3xl font-bold mb-4">Conversion Methods</h1>
+			<h1 class="text-3xl font-bold mb-4">Graph and Network Theory</h1>
 			<p class="mb-4">
-				Conversion methods are how firms and enterprise roll out new features or systems to a platform or their users.
+				Graph and network theory studies the relationships and connections between nodes, such as cities connected by
+				roads or social networks. It is used to analyze and solve problems in various fields, including computer
+				science, biology, and social sciences. This section explores the basics of graph and network theory, its
+				applications, and its impact on different domains.
 			</p>
-			<h2 class="text-2xl font-bold mb-2 mt-8">Types of Conversion Methods</h2>
-			<p class="mb-4">There are several types of conversion methods, including:</p>
-			<ul class="list-disc ml-8 mb-8">
-				<li>Direct Conversions</li>
-				<li>Phased Conversions</li>
-				<li>Parallel Conversions</li>
-				<li>Pilot Conversions</li>
-			</ul>
 
-			<!-- Conversion Methods Details -->
+			<!-- Detailed sections -->
 			<div class="space-y-4">
 				<div>
 					<button
 						class="w-full text-left bg-blue-500 text-white p-3 rounded focus:outline-none flex justify-between items-center"
-						onclick="toggleDetails('directDetails')"
+						onclick="toggleDetails('introductionGraphTheoryDetails')"
 					>
-						<span>Direct Conversions</span>
-						<span id="arrow-directDetails">▼</span>
+						<span>Introduction to Graph and Network Theory</span>
+						<span id="arrow-introductionGraphTheoryDetails">▼</span>
 					</button>
-					<div id="directDetails" class="hidden bg-white p-4 rounded shadow-md">
+					<div id="introductionGraphTheoryDetails" class="hidden bg-white p-4 rounded shadow-md">
 						<p>
-							A direct conversion is when a company stops using the old system and starts using the new system at a
-							specific point in time. This can be risky because even with sufficient testing, it is impossible to make
-							sure there are no issues with the new system.
+							Graph theory is a branch of mathematics that studies graphs, which are mathematical structures used to
+							model pairwise relations between objects. A graph consists of vertices (or nodes) connected by edges (or
+							arcs). Network theory is an extension of graph theory that focuses on the analysis of complex networks,
+							such as social networks, communication networks, and biological networks.
 						</p>
 					</div>
 				</div>
@@ -75,54 +71,48 @@
 				<div>
 					<button
 						class="w-full text-left bg-blue-500 text-white p-3 rounded focus:outline-none flex justify-between items-center"
-						onclick="toggleDetails('phasedDetails')"
+						onclick="toggleDetails('applicationsGraphTheoryDetails')"
 					>
-						<span>Phased Conversions</span>
-						<span id="arrow-phasedDetails">▼</span>
+						<span>Applications of Graph and Network Theory</span>
+						<span id="arrow-applicationsGraphTheoryDetails">▼</span>
 					</button>
-					<div id="phasedDetails" class="hidden bg-white p-4 rounded shadow-md">
-						<p>
-							Phased conversion is a conversion that is slowly integrated with the new and slowly removes the old. An
-							example of this is a school has a new system to manage sports and each team’s athletes. The old system is
-							paper and pencil. Over time, a new system is introduced to manage students, their teams, seasons, and
-							their coaches. At ﬁrst, the new system manages teams. Then the new system manages seasons (and school
-							terms). When users are familiar with that process, the system is expanded to include the management of
-							coaches, players, and events. At the end of implementation, the new system manages everything related to
-							student athletics and the old paper and pencil system is no longer used.
-						</p>
+					<div id="applicationsGraphTheoryDetails" class="hidden bg-white p-4 rounded shadow-md">
+						<ul class="list-disc ml-8 mb-4">
+							<li>
+								<b>Optimal Delivery Routes:</b> Graph theory is used to find the shortest or most efficient delivery
+								routes for logistics and transportation.
+							</li>
+							<li>
+								<b>Disease Transmission Patterns:</b> Network theory helps model and analyze the spread of diseases in
+								populations, informing public health strategies.
+							</li>
+							<li>
+								<b>Social Network Analysis:</b> Graph and network theory are used to study social relationships and
+								interactions, identifying key influencers and patterns of communication.
+							</li>
+							<li>
+								<b>Internet Structure:</b> Network theory helps understand the structure and behavior of the internet,
+								including routing, data flow, and security.
+							</li>
+						</ul>
 					</div>
 				</div>
 
 				<div>
 					<button
 						class="w-full text-left bg-blue-500 text-white p-3 rounded focus:outline-none flex justify-between items-center"
-						onclick="toggleDetails('parallelDetails')"
+						onclick="toggleDetails('impactGraphTheoryDetails')"
 					>
-						<span>Parallel Conversions</span>
-						<span id="arrow-parallelDetails">▼</span>
+						<span>Impact of Graph and Network Theory</span>
+						<span id="arrow-impactGraphTheoryDetails">▼</span>
 					</button>
-					<div id="parallelDetails" class="hidden bg-white p-4 rounded shadow-md">
+					<div id="impactGraphTheoryDetails" class="hidden bg-white p-4 rounded shadow-md">
 						<p>
-							The new system is introduced while the old one is still in use. Both systems process all activity and the
-							results are compared. Once there is confidence that the new one operates properly, the old one is shut
-							down.
-						</p>
-					</div>
-				</div>
-
-				<div>
-					<button
-						class="w-full text-left bg-blue-500 text-white p-3 rounded focus:outline-none flex justify-between items-center"
-						onclick="toggleDetails('pilotDetails')"
-					>
-						<span>Pilot Conversions</span>
-						<span id="arrow-pilotDetails">▼</span>
-					</button>
-					<div id="pilotDetails" class="hidden bg-white p-4 rounded shadow-md">
-						<p>
-							Pilot Conversions are when part of an organisation uses the new system while the rest of it continues to
-							use the old. This localises problems to the pilot group so support resources can focus on it. However,
-							there can be interface issues where organisational units share data.
+							Graph and network theory have significant applications in various domains, enabling the analysis and
+							optimization of complex systems. They provide insights into the structure and dynamics of networks,
+							helping solve problems related to connectivity, flow, and resilience. The impact of graph and network
+							theory is evident in fields like computer science, biology, sociology, and engineering, where they
+							contribute to advancements in technology, healthcare, and social sciences.
 						</p>
 					</div>
 				</div>

@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Study Notes - Conversion Methods</title>
+		<title>Study Notes - Social Media</title>
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="styles.css" />
 	</head>
@@ -11,7 +11,7 @@
 		<!-- Navigation Bar -->
 		<nav class="bg-blue-600 text-white p-4 relative">
 			<div class="container mx-auto flex justify-between items-center">
-				<a href="#" class="text-2xl font-bold">Study Notes</a>
+				<a href="index.html" class="text-2xl font-bold">Study Notes</a>
 				<div class="relative">
 					<button class="focus:outline-none" id="dropdownButton">Topics</button>
 					<div
@@ -40,34 +40,29 @@
 
 		<!-- Content -->
 		<div class="container mx-auto mt-8 p-4">
-			<h1 class="text-3xl font-bold mb-4">Conversion Methods</h1>
+			<h1 class="text-3xl font-bold mb-4">Social Media</h1>
 			<p class="mb-4">
-				Conversion methods are how firms and enterprise roll out new features or systems to a platform or their users.
+				Social media refers to online platforms that enable users to create, share, and interact with content and other
+				users. Examples include Facebook, Twitter, Instagram, and LinkedIn. This section explores the basics of social
+				media, its various platforms, and its impact on communication and society.
 			</p>
-			<h2 class="text-2xl font-bold mb-2 mt-8">Types of Conversion Methods</h2>
-			<p class="mb-4">There are several types of conversion methods, including:</p>
-			<ul class="list-disc ml-8 mb-8">
-				<li>Direct Conversions</li>
-				<li>Phased Conversions</li>
-				<li>Parallel Conversions</li>
-				<li>Pilot Conversions</li>
-			</ul>
 
-			<!-- Conversion Methods Details -->
+			<!-- Detailed sections -->
 			<div class="space-y-4">
 				<div>
 					<button
 						class="w-full text-left bg-blue-500 text-white p-3 rounded focus:outline-none flex justify-between items-center"
-						onclick="toggleDetails('directDetails')"
+						onclick="toggleDetails('introductionSocialMediaDetails')"
 					>
-						<span>Direct Conversions</span>
-						<span id="arrow-directDetails">▼</span>
+						<span>Introduction to Social Media</span>
+						<span id="arrow-introductionSocialMediaDetails">▼</span>
 					</button>
-					<div id="directDetails" class="hidden bg-white p-4 rounded shadow-md">
+					<div id="introductionSocialMediaDetails" class="hidden bg-white p-4 rounded shadow-md">
 						<p>
-							A direct conversion is when a company stops using the old system and starts using the new system at a
-							specific point in time. This can be risky because even with sufficient testing, it is impossible to make
-							sure there are no issues with the new system.
+							Social media platforms allow users to create profiles, share content, and connect with others. These
+							platforms facilitate the creation and exchange of information, ideas, and multimedia content. Social media
+							has transformed the way people communicate, interact, and consume information, creating a global network
+							of interconnected individuals and communities.
 						</p>
 					</div>
 				</div>
@@ -75,54 +70,48 @@
 				<div>
 					<button
 						class="w-full text-left bg-blue-500 text-white p-3 rounded focus:outline-none flex justify-between items-center"
-						onclick="toggleDetails('phasedDetails')"
+						onclick="toggleDetails('platformsSocialMediaDetails')"
 					>
-						<span>Phased Conversions</span>
-						<span id="arrow-phasedDetails">▼</span>
+						<span>Popular Social Media Platforms</span>
+						<span id="arrow-platformsSocialMediaDetails">▼</span>
 					</button>
-					<div id="phasedDetails" class="hidden bg-white p-4 rounded shadow-md">
-						<p>
-							Phased conversion is a conversion that is slowly integrated with the new and slowly removes the old. An
-							example of this is a school has a new system to manage sports and each team’s athletes. The old system is
-							paper and pencil. Over time, a new system is introduced to manage students, their teams, seasons, and
-							their coaches. At ﬁrst, the new system manages teams. Then the new system manages seasons (and school
-							terms). When users are familiar with that process, the system is expanded to include the management of
-							coaches, players, and events. At the end of implementation, the new system manages everything related to
-							student athletics and the old paper and pencil system is no longer used.
-						</p>
+					<div id="platformsSocialMediaDetails" class="hidden bg-white p-4 rounded shadow-md">
+						<ul class="list-disc ml-8 mb-4">
+							<li>
+								<b>Facebook:</b> A platform for connecting with friends and family, sharing updates, photos, and videos,
+								and participating in groups and events.
+							</li>
+							<li>
+								<b>Twitter:</b> A microblogging platform where users can post short updates, known as tweets, and follow
+								other users to stay updated on their activities.
+							</li>
+							<li>
+								<b>Instagram:</b> A visual platform for sharing photos and videos, often with filters and effects, and
+								engaging with followers through likes, comments, and direct messages.
+							</li>
+							<li>
+								<b>LinkedIn:</b> A professional networking platform for connecting with colleagues, finding job
+								opportunities, and sharing industry news and insights.
+							</li>
+						</ul>
 					</div>
 				</div>
 
 				<div>
 					<button
 						class="w-full text-left bg-blue-500 text-white p-3 rounded focus:outline-none flex justify-between items-center"
-						onclick="toggleDetails('parallelDetails')"
+						onclick="toggleDetails('impactSocialMediaDetails')"
 					>
-						<span>Parallel Conversions</span>
-						<span id="arrow-parallelDetails">▼</span>
+						<span>Impact of Social Media</span>
+						<span id="arrow-impactSocialMediaDetails">▼</span>
 					</button>
-					<div id="parallelDetails" class="hidden bg-white p-4 rounded shadow-md">
+					<div id="impactSocialMediaDetails" class="hidden bg-white p-4 rounded shadow-md">
 						<p>
-							The new system is introduced while the old one is still in use. Both systems process all activity and the
-							results are compared. Once there is confidence that the new one operates properly, the old one is shut
-							down.
-						</p>
-					</div>
-				</div>
-
-				<div>
-					<button
-						class="w-full text-left bg-blue-500 text-white p-3 rounded focus:outline-none flex justify-between items-center"
-						onclick="toggleDetails('pilotDetails')"
-					>
-						<span>Pilot Conversions</span>
-						<span id="arrow-pilotDetails">▼</span>
-					</button>
-					<div id="pilotDetails" class="hidden bg-white p-4 rounded shadow-md">
-						<p>
-							Pilot Conversions are when part of an organisation uses the new system while the rest of it continues to
-							use the old. This localises problems to the pilot group so support resources can focus on it. However,
-							there can be interface issues where organisational units share data.
+							Social media has transformed communication and media consumption patterns, allowing for real-time
+							interaction and information dissemination. It has also provided businesses with new marketing and
+							engagement opportunities. However, social media also presents challenges, such as the spread of
+							misinformation, privacy concerns, and the potential for addiction and mental health issues. Balancing the
+							benefits and drawbacks of social media is crucial for its responsible use and development.
 						</p>
 					</div>
 				</div>

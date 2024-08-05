@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Study Notes - Conversion Methods</title>
+		<title>Study Notes - Blockchain Technology</title>
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="styles.css" />
 	</head>
@@ -11,7 +11,7 @@
 		<!-- Navigation Bar -->
 		<nav class="bg-blue-600 text-white p-4 relative">
 			<div class="container mx-auto flex justify-between items-center">
-				<a href="#" class="text-2xl font-bold">Study Notes</a>
+				<a href="index.html" class="text-2xl font-bold">Study Notes</a>
 				<div class="relative">
 					<button class="focus:outline-none" id="dropdownButton">Topics</button>
 					<div
@@ -40,34 +40,28 @@
 
 		<!-- Content -->
 		<div class="container mx-auto mt-8 p-4">
-			<h1 class="text-3xl font-bold mb-4">Conversion Methods</h1>
+			<h1 class="text-3xl font-bold mb-4">Blockchain Technology</h1>
 			<p class="mb-4">
-				Conversion methods are how firms and enterprise roll out new features or systems to a platform or their users.
+				Blockchain technology is a decentralized public ledger that records the transaction history of digital assets.
+				It is the backbone of cryptocurrencies like Bitcoin. This section explores the basics of blockchain, its
+				applications, and its impact on various sectors.
 			</p>
-			<h2 class="text-2xl font-bold mb-2 mt-8">Types of Conversion Methods</h2>
-			<p class="mb-4">There are several types of conversion methods, including:</p>
-			<ul class="list-disc ml-8 mb-8">
-				<li>Direct Conversions</li>
-				<li>Phased Conversions</li>
-				<li>Parallel Conversions</li>
-				<li>Pilot Conversions</li>
-			</ul>
 
-			<!-- Conversion Methods Details -->
+			<!-- Detailed sections -->
 			<div class="space-y-4">
 				<div>
 					<button
 						class="w-full text-left bg-blue-500 text-white p-3 rounded focus:outline-none flex justify-between items-center"
-						onclick="toggleDetails('directDetails')"
+						onclick="toggleDetails('introductionBlockchainDetails')"
 					>
-						<span>Direct Conversions</span>
-						<span id="arrow-directDetails">▼</span>
+						<span>Introduction to Blockchain Technology</span>
+						<span id="arrow-introductionBlockchainDetails">▼</span>
 					</button>
-					<div id="directDetails" class="hidden bg-white p-4 rounded shadow-md">
+					<div id="introductionBlockchainDetails" class="hidden bg-white p-4 rounded shadow-md">
 						<p>
-							A direct conversion is when a company stops using the old system and starts using the new system at a
-							specific point in time. This can be risky because even with sufficient testing, it is impossible to make
-							sure there are no issues with the new system.
+							Blockchain is a distributed database that maintains a continuously growing list of records called blocks.
+							Each block contains a timestamp and a link to the previous block, creating a secure chain of data.
+							Blockchain's decentralized nature ensures transparency, security, and immutability of the recorded data.
 						</p>
 					</div>
 				</div>
@@ -75,54 +69,48 @@
 				<div>
 					<button
 						class="w-full text-left bg-blue-500 text-white p-3 rounded focus:outline-none flex justify-between items-center"
-						onclick="toggleDetails('phasedDetails')"
+						onclick="toggleDetails('applicationsBlockchainDetails')"
 					>
-						<span>Phased Conversions</span>
-						<span id="arrow-phasedDetails">▼</span>
+						<span>Applications of Blockchain Technology</span>
+						<span id="arrow-applicationsBlockchainDetails">▼</span>
 					</button>
-					<div id="phasedDetails" class="hidden bg-white p-4 rounded shadow-md">
-						<p>
-							Phased conversion is a conversion that is slowly integrated with the new and slowly removes the old. An
-							example of this is a school has a new system to manage sports and each team’s athletes. The old system is
-							paper and pencil. Over time, a new system is introduced to manage students, their teams, seasons, and
-							their coaches. At ﬁrst, the new system manages teams. Then the new system manages seasons (and school
-							terms). When users are familiar with that process, the system is expanded to include the management of
-							coaches, players, and events. At the end of implementation, the new system manages everything related to
-							student athletics and the old paper and pencil system is no longer used.
-						</p>
+					<div id="applicationsBlockchainDetails" class="hidden bg-white p-4 rounded shadow-md">
+						<ul class="list-disc ml-8 mb-4">
+							<li>
+								<b>Cryptocurrencies:</b> Blockchain technology powers cryptocurrencies like Bitcoin and Ethereum,
+								enabling secure and transparent financial transactions.
+							</li>
+							<li>
+								<b>Supply Chain Management:</b> Blockchain provides end-to-end visibility and traceability in supply
+								chains, reducing fraud and improving efficiency.
+							</li>
+							<li>
+								<b>Smart Contracts:</b> Blockchain enables the creation of self-executing contracts with the terms of
+								the agreement directly written into code, ensuring automated and tamper-proof execution.
+							</li>
+							<li>
+								<b>Healthcare:</b> Blockchain can securely store patient records, ensuring data integrity and privacy
+								while allowing authorized access for medical professionals.
+							</li>
+						</ul>
 					</div>
 				</div>
 
 				<div>
 					<button
 						class="w-full text-left bg-blue-500 text-white p-3 rounded focus:outline-none flex justify-between items-center"
-						onclick="toggleDetails('parallelDetails')"
+						onclick="toggleDetails('impactBlockchainDetails')"
 					>
-						<span>Parallel Conversions</span>
-						<span id="arrow-parallelDetails">▼</span>
+						<span>Impact of Blockchain Technology</span>
+						<span id="arrow-impactBlockchainDetails">▼</span>
 					</button>
-					<div id="parallelDetails" class="hidden bg-white p-4 rounded shadow-md">
+					<div id="impactBlockchainDetails" class="hidden bg-white p-4 rounded shadow-md">
 						<p>
-							The new system is introduced while the old one is still in use. Both systems process all activity and the
-							results are compared. Once there is confidence that the new one operates properly, the old one is shut
-							down.
-						</p>
-					</div>
-				</div>
-
-				<div>
-					<button
-						class="w-full text-left bg-blue-500 text-white p-3 rounded focus:outline-none flex justify-between items-center"
-						onclick="toggleDetails('pilotDetails')"
-					>
-						<span>Pilot Conversions</span>
-						<span id="arrow-pilotDetails">▼</span>
-					</button>
-					<div id="pilotDetails" class="hidden bg-white p-4 rounded shadow-md">
-						<p>
-							Pilot Conversions are when part of an organisation uses the new system while the rest of it continues to
-							use the old. This localises problems to the pilot group so support resources can focus on it. However,
-							there can be interface issues where organisational units share data.
+							Blockchain technology has the potential to revolutionize various industries by providing secure,
+							transparent, and efficient solutions for data management and transactions. It reduces the need for
+							intermediaries, enhances trust, and enables innovative applications like decentralized finance (DeFi) and
+							non-fungible tokens (NFTs). However, challenges such as scalability, regulatory concerns, and energy
+							consumption need to be addressed for widespread adoption.
 						</p>
 					</div>
 				</div>
