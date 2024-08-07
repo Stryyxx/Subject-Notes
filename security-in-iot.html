@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Study Notes - Security in IoT</title>
+		<title>Study Notes | Security in IoT</title>
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="styles.css" />
 	</head>
@@ -13,26 +13,41 @@
 			<div class="container mx-auto flex justify-between items-center">
 				<a href="index.html" class="text-2xl font-bold">Study Notes</a>
 				<div class="relative">
-					<button class="focus:outline-none" id="dropdownButton">Topics</button>
-					<div
-						class="absolute right-0 hidden bg-white text-gray-800 py-2 mt-1 rounded shadow-lg w-64"
-						id="dropdown"
-						dir="rtl"
-					>
-						<a href="human-centric-computing.html" class="block px-4 py-2 hover:bg-gray-200">Human-Centric Computing</a>
-						<a href="disruptive-technologies.html" class="block px-4 py-2 hover:bg-gray-200">Disruptive Technologies</a>
-						<a href="mobile-computing.html" class="block px-4 py-2 hover:bg-gray-200">Mobile Computing</a>
-						<a href="cloud-computing.html" class="block px-4 py-2 hover:bg-gray-200">Cloud Computing</a>
-						<a href="artificial-intelligence.html" class="block px-4 py-2 hover:bg-gray-200">Artificial Intelligence</a>
-						<a href="blockchain-technology.html" class="block px-4 py-2 hover:bg-gray-200">Blockchain Technology</a>
-						<a href="e-commerce.html" class="block px-4 py-2 hover:bg-gray-200">E-commerce</a>
-						<a href="ride-sharing.html" class="block px-4 py-2 hover:bg-gray-200">Ride-sharing</a>
-						<a href="3d-printing.html" class="block px-4 py-2 hover:bg-gray-200">3D Printing</a>
-						<a href="social-media.html" class="block px-4 py-2 hover:bg-gray-200">Social Media</a>
-						<a href="internet-of-things.html" class="block px-4 py-2 hover:bg-gray-200">Internet of Things</a>
-						<a href="security-in-iot.html" class="block px-4 py-2 hover:bg-gray-200">Security in IoT</a>
-						<a href="graph-network-theory.html" class="block px-4 py-2 hover:bg-gray-200">Graph and Network Theory</a>
-						<a href="conversionmethods.html" class="block px-4 py-2 hover:bg-gray-200">Conversion Methods</a>
+					<button class="focus:outline-none" id="dropdownButton">Subjects</button>
+					<div class="absolute right-0 hidden bg-white text-gray-800 py-2 mt-1 rounded shadow-lg w-64" id="dropdown">
+						<!-- Computing subject -->
+						<div class="subject">
+							<button
+								class="subject-btn block px-4 py-2 hover:bg-gray-200 font-bold w-full text-left focus:outline-none"
+								onclick="toggleDropdown('computingTopics')"
+							>
+								Computing
+							</button>
+							<div id="computingTopics" class="subject-topics hidden">
+								<a href="human-centric-computing.html" class="block px-4 py-2 hover:bg-gray-200"
+									>Human-Centric Computing</a
+								>
+								<a href="disruptive-technologies.html" class="block px-4 py-2 hover:bg-gray-200"
+									>Disruptive Technologies</a
+								>
+								<a href="mobile-computing.html" class="block px-4 py-2 hover:bg-gray-200">Mobile Computing</a>
+								<a href="cloud-computing.html" class="block px-4 py-2 hover:bg-gray-200">Cloud Computing</a>
+								<a href="artificial-intelligence.html" class="block px-4 py-2 hover:bg-gray-200"
+									>Artificial Intelligence</a
+								>
+								<a href="blockchain-technology.html" class="block px-4 py-2 hover:bg-gray-200">Blockchain Technology</a>
+								<a href="e-commerce.html" class="block px-4 py-2 hover:bg-gray-200">E-commerce</a>
+								<a href="ride-sharing.html" class="block px-4 py-2 hover:bg-gray-200">Ride-sharing</a>
+								<a href="3d-printing.html" class="block px-4 py-2 hover:bg-gray-200">3D Printing</a>
+								<a href="social-media.html" class="block px-4 py-2 hover:bg-gray-200">Social Media</a>
+								<a href="internet-of-things.html" class="block px-4 py-2 hover:bg-gray-200">Internet of Things</a>
+								<a href="security-in-iot.html" class="block px-4 py-2 hover:bg-gray-200">Security in IoT</a>
+								<a href="graph-network-theory.html" class="block px-4 py-2 hover:bg-gray-200"
+									>Graph and Network Theory</a
+								>
+								<a href="conversion-methods.html" class="block px-4 py-2 hover:bg-gray-200">Conversion Methods</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -127,7 +142,6 @@
 			document.getElementById("dropdownButton").addEventListener("click", function () {
 				document.getElementById("dropdown").classList.toggle("hidden");
 			});
-
 			// Close dropdown if clicked outside
 			document.addEventListener("click", function (e) {
 				const target = e.target;
@@ -135,13 +149,17 @@
 					document.getElementById("dropdown").classList.add("hidden");
 				}
 			});
-
 			// Toggle details visibility
 			function toggleDetails(id) {
 				const details = document.getElementById(id);
 				const arrow = document.getElementById("arrow-" + id);
 				details.classList.toggle("hidden");
 				arrow.textContent = details.classList.contains("hidden") ? "▼" : "▲";
+			}
+			// Toggle subtopics visibility
+			function toggleDropdown(id) {
+				const element = document.getElementById(id);
+				element.classList.toggle("hidden");
 			}
 		</script>
 	</body>
