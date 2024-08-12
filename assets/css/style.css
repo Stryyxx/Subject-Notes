@@ -1,12 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:ital,wght@0,300;1,300&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 :root {
 	--ff: "Titillium Web", sans-serif;
-	--white: #f0f0f0;
-	--lightcolor: #d8d8d8;
-	--darkcolor: #2b2a29;
-	--primaryaccent: #07708e;
-	--secondaryaccent: #dd3f27;
-	--tertiaryaccent: #0f3464;
+	--white: #e9e8e5;
+	--lightcolor: #4da4bb;
+	--darkcolor: #0f334c;
+	--primaryaccent: #71b26d;
+	--secondaryaccent: #07708e;
 	--fontxs: 0.75rem;
 	--fontsm: 0.875rem;
 	--fontmd: 1rem;
@@ -30,6 +29,32 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+	background-color: var(--white);
+}
+
+.h1 {
+	font-size: var(--font3xl);
+	font-weight: bold;
+	margin-bottom: 4px;
+}
+
+.h2 {
+	font-size: var(--font2xl);
+	font-weight: bold;
+}
+
+.p1 {
+	font-size: var(--fontmd);
+	margin-bottom: 1rem;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin: auto;
+	padding: 1rem;
+	margin-top: 2rem;
 }
 
 .wrapper {
@@ -48,7 +73,7 @@ body {
 
 .card {
 	background-color: var(--lightcolor);
-	color: var(--darkcolor);
+	color: var(--white);
 	font-size: var(--fontlg);
 	border: #2b2a29 2px solid;
 	border-radius: 8px;
@@ -98,7 +123,7 @@ body {
 }
 
 .footer {
-	background-color: var(--primaryaccent);
+	background-color: var(--secondaryaccent);
 	color: var(--white);
 	text-align: center;
 	padding: 1.5rem;
@@ -108,10 +133,11 @@ body {
 }
 
 .nav {
-	background-color: var(--tertiaryaccent);
+	background-color: var(--secondaryaccent);
 	color: var(--white);
 	text-align: center;
 	padding: 1rem;
+	padding-left: 1.25rem;
 	position: relative;
 	top: 0;
 	width: 100%;
@@ -119,7 +145,7 @@ body {
 	font-size: var(--font3xl);
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
@@ -129,4 +155,52 @@ body {
 
 .nav a:hover {
 	transform: scale(1.1);
+}
+
+.back-button {
+	background-color: var(--lightcolor);
+	color: var(--white);
+	padding: 0.5rem;
+	border-radius: 4px;
+	transition: var(--transition);
+	font-size: var(--fontsm);
+}
+
+.dropdown {
+	background-color: var(--primaryaccent);
+	color: var(--white);
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	border-radius: 4px;
+	transition: var(--transition);
+}
+
+.dropdown:hover {
+	background-color: var(--secondaryaccent);
+	box-shadow: var(--shadow);
+}
+
+.dropdown-content {
+	position: relative;
+	background-color: #fff;
+	min-width: 160px;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	border-radius: 4px;
+	padding: 1rem;
+}
+
+.list {
+	margin-left: 2rem;
+	list-style-type: disc;
+	margin-bottom: 1rem;
+}
+
+.section {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
 }

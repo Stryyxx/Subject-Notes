@@ -5,296 +5,231 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Study Notes | Young Offenders</title>
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
-		<link rel="stylesheet" href="assets/css/styles.css" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
 	</head>
-	<body class="bg-gray-100 text-gray-800">
+	<body>
 		<!-- Navigation Bar -->
-		<nav class="bg-blue-600 text-white p-4 relative">
-			<div class="container mx-auto flex justify-between items-center">
-				<a href="index.html" class="text-2xl font-bold">Study Notes</a>
-				<div class="relative group">
-					<div class="focus:outline-none dropdown-trigger">Subjects</div>
-					<div
-						class="absolute right-0 hidden group-hover:flex bg-white text-gray-800 py-2 mt-1 rounded shadow-lg w-64"
-						id="dropdown"
-					>
-						<!-- Computing Subject -->
-						<div class="subject group w-full">
-							<div class="subject-btn block px-4 py-2 hover:bg-gray-200 font-bold w-full text-left focus:outline-none">
-								Computing
-							</div>
-							<div class="subject-topics hidden group-hover:block">
-								<a href="human-centric-computing.html" class="block px-4 py-2 hover:bg-gray-200"
-									>Human-Centric Computing</a
-								>
-								<a href="disruptive-technologies.html" class="block px-4 py-2 hover:bg-gray-200"
-									>Disruptive Technologies</a
-								>
-								<a href="mobile-computing.html" class="block px-4 py-2 hover:bg-gray-200">Mobile Computing</a>
-								<a href="cloud-computing.html" class="block px-4 py-2 hover:bg-gray-200">Cloud Computing</a>
-								<a href="artificial-intelligence.html" class="block px-4 py-2 hover:bg-gray-200"
-									>Artificial Intelligence</a
-								>
-								<a href="blockchain-technology.html" class="block px-4 py-2 hover:bg-gray-200">Blockchain Technology</a>
-								<a href="e-commerce.html" class="block px-4 py-2 hover:bg-gray-200">E-commerce</a>
-								<a href="ride-sharing.html" class="block px-4 py-2 hover:bg-gray-200">Ride-sharing</a>
-								<a href="3d-printing.html" class="block px-4 py-2 hover:bg-gray-200">3D Printing</a>
-								<a href="social-media.html" class="block px-4 py-2 hover:bg-gray-200">Social Media</a>
-								<a href="internet-of-things.html" class="block px-4 py-2 hover:bg-gray-200">Internet of Things</a>
-								<a href="security-in-iot.html" class="block px-4 py-2 hover:bg-gray-200">Security in IoT</a>
-								<a href="graph-network-theory.html" class="block px-4 py-2 hover:bg-gray-200"
-									>Graph and Network Theory</a
-								>
-								<a href="conversion-methods.html" class="block px-4 py-2 hover:bg-gray-200">Conversion Methods</a>
-							</div>
-						</div>
-						<!-- Legal Subject -->
-						<div class="subject group w-full">
-							<div class="subject-btn block px-4 py-2 hover:bg-gray-200 font-bold w-full text-left focus:outline-none">
-								Legal
-							</div>
-							<div class="subject-topics hidden group-hover:block">
-								<a href="young-offenders.html" class="block px-4 py-2 hover:bg-gray-200">Young Offenders</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+		<nav class="nav">
+			<a href="/index.html" class="h2">Study Notes</a>
+			<a href="index.html" class="back-button">Back to topics</a>
 		</nav>
-		<!-- Content -->
-		<div class="container mx-auto mt-8 p-4">
-			<h1 class="text-3xl font-bold mb-4">Young Offenders</h1>
 
-			<p>
+		<!-- Content -->
+		<div class="container">
+			<h1 class="h1">Young Offenders</h1>
+			<p class="p1">
 				Young offenders are treated differently in the legal system, considering their age, rights, and the nature of
 				their crimes. The following sections provide detailed notes on various aspects related to young offenders.
 			</p>
 
-			<div class="mb-4 mt-4">
-				<button
-					class="w-full text-left bg-blue-500 text-white p-3 rounded focus:outline-none flex justify-between items-center"
-					onclick="toggleDetails('ageResponsibility')"
-				>
-					<span>The Age of Criminal Responsibility</span>
-					<span id="arrow-ageResponsibility">▼</span>
-				</button>
-				<div id="ageResponsibility" class="hidden bg-white p-4 rounded shadow-md">
-					<h2 class="text-2xl font-bold mb-2">How an Offenders’ Age Affects Their Treatment</h2>
-					<p>
-						Children often don’t understand the full consequence of their actions because of their age, meaning they
-						lack mens rea (criminal intent to commit crimes).
-					</p>
-					<h3 class="text-xl font-bold mb-2">Doli Incapax</h3>
-					<p>
-						Children often don’t understand the full consequence of their actions because of their age and are incapable
-						of crime.
-					</p>
-					<ul class="list-disc ml-8">
-						<li>
-							UN Convention on the Right of the Child (CROC) Article 40: There should be a minimum age for assuming that
-							children have the capacity to break the law.
-						</li>
-						<li>
-							Children (Criminal Proceedings) Act NSW: In NSW, children under 10 are assumed to be doli incapax.
-							However, between the ages of 10-14, the presumption that the child is doli incapax is rebuttable (can be
-							contested). Children over 14 aren’t protected under doli incapax.
-						</li>
-						<li>
-							R v LMW (1999): 10-year-old LMW pushed 6-year-old Corey Davis into a river. Corey drowned and LMW was
-							charged with manslaughter. As he is between the ages 10-14, doli incapax is rebuttable. The court found
-							this was a case of bullying gone wrong and that LMW had no intention to make Corey die when he pushed him.
-						</li>
-					</ul>
+			<div class="section">
+				<div>
+					<button class="dropdown" onclick="toggleDetails('ageResponsibility')">
+						<span>The Age of Criminal Responsibility</span>
+						<span id="arrow-ageResponsibility">▼</span>
+					</button>
+					<div id="ageResponsibility" class="dropdown-content hidden">
+						<h2 class="h2">How an Offenders’ Age Affects Their Treatment</h2>
+						<p>
+							Children often don’t understand the full consequence of their actions because of their age, meaning they
+							lack mens rea (criminal intent to commit crimes).
+						</p>
+						<h3 class="h3">Doli Incapax</h3>
+						<p>
+							Children often don’t understand the full consequence of their actions because of their age and are
+							incapable of crime.
+						</p>
+						<ul class="list">
+							<li>
+								UN Convention on the Right of the Child (CROC) Article 40: There should be a minimum age for assuming
+								that children have the capacity to break the law.
+							</li>
+							<li>
+								Children (Criminal Proceedings) Act NSW: In NSW, children under 10 are assumed to be doli incapax.
+								However, between the ages of 10-14, the presumption that the child is doli incapax is rebuttable (can be
+								contested). Children over 14 aren’t protected under doli incapax.
+							</li>
+							<li>
+								R v LMW (1999): 10-year-old LMW pushed 6-year-old Corey Davis into a river. Corey drowned and LMW was
+								charged with manslaughter. As he is between the ages 10-14, doli incapax is rebuttable. The court found
+								this was a case of bullying gone wrong and that LMW had no intention to make Corey die when he pushed
+								him.
+							</li>
+						</ul>
+					</div>
 				</div>
-			</div>
 
-			<div class="mb-4">
-				<button
-					class="w-full text-left bg-blue-500 text-white p-3 rounded focus:outline-none flex justify-between items-center"
-					onclick="toggleDetails('rightsChildren')"
-				>
-					<span>Rights of Children When Questioned and Arrested</span>
-					<span id="arrow-rightsChildren">▼</span>
-				</button>
-				<div id="rightsChildren" class="hidden bg-white p-4 rounded shadow-md">
-					<h2 class="text-2xl font-bold mb-2">Rights of Children When Questioned and Arrested</h2>
-					<p>
-						Law Enforcement (Power and Responsibilities) Act (LEPRA): All guidelines for police actions are contained in
-						this act. Additionally, provisions are provided for young offenders under the Young Offenders Act 1998 NSW.
-					</p>
-					<ul class="list-disc ml-8">
-						<li>
-							<b>C: Contact Parents</b>: Parents must be contacted whenever a child is brought in for questioning and
-							before they are questioned.
-						</li>
-						<li><b>L: Legal Aid</b>: A child must be told they can get access to legal aid.</li>
-						<li>
-							<b>A: Adult Present</b>: There must be a guardian or support person present for the child’s questioning.
-						</li>
-						<li>
-							<b>S: Search and Seizure</b>: Police can search children in the same way as adults and seize unlawful
-							materials.
-						</li>
-						<li><b>S: Silence</b>: A child must be informed of their right to silence.</li>
-						<li>
-							<b>I: ID Rules</b>: For children 14 years and younger, the police cannot take fingerprints or photographs
-							without a court order.
-						</li>
-						<li>
-							<b>C: Caution</b>: The child must be cautioned about their rights in the presence of a support person.
-						</li>
-						<li><b>D: DNA</b>: DNA cannot be taken without a court order.</li>
-						<li>
-							<b>A: Arrest</b>: The rules for arrest are the same as for adults, except that a child can’t be forced to
-							go to the police without being arrested.
-						</li>
-						<li><b>D: Detention Period</b>: The rules for detention are the same as adults.</li>
-						<li>
-							<b>S: Street Questioning</b>: Children on the street cannot be questioned unless under certain
-							circumstances.
-						</li>
-					</ul>
+				<div>
+					<button class="dropdown" onclick="toggleDetails('rightsChildren')">
+						<span>Rights of Children When Questioned and Arrested</span>
+						<span id="arrow-rightsChildren">▼</span>
+					</button>
+					<div id="rightsChildren" class="dropdown-content hidden">
+						<h2 class="h2">Rights of Children When Questioned and Arrested</h2>
+						<p>
+							Law Enforcement (Power and Responsibilities) Act (LEPRA): All guidelines for police actions are contained
+							in this act. Additionally, provisions are provided for young offenders under the Young Offenders Act 1998
+							NSW.
+						</p>
+						<ul class="list">
+							<li>
+								<b>C: Contact Parents:</b> Parents must be contacted whenever a child is brought in for questioning and
+								before they are questioned.
+							</li>
+							<li><b>L: Legal Aid:</b> A child must be told they can get access to legal aid.</li>
+							<li>
+								<b>A: Adult Present:</b> There must be a guardian or support person present for the child’s questioning.
+							</li>
+							<li>
+								<b>S: Search and Seizure:</b> Police can search children in the same way as adults and seize unlawful
+								materials.
+							</li>
+							<li><b>S: Silence:</b> A child must be informed of their right to silence.</li>
+							<li>
+								<b>I: ID Rules:</b> For children 14 years and younger, the police cannot take fingerprints or
+								photographs without a court order.
+							</li>
+							<li>
+								<b>C: Caution:</b> The child must be cautioned about their rights in the presence of a support person.
+							</li>
+							<li><b>D: DNA:</b> DNA cannot be taken without a court order.</li>
+							<li>
+								<b>A: Arrest:</b> The rules for arrest are the same as for adults, except that a child can’t be forced
+								to go to the police without being arrested.
+							</li>
+							<li><b>D: Detention Period:</b> The rules for detention are the same as adults.</li>
+							<li>
+								<b>S: Street Questioning:</b> Children on the street cannot be questioned unless under certain
+								circumstances.
+							</li>
+						</ul>
+					</div>
 				</div>
-			</div>
 
-			<div class="mb-4">
-				<button
-					class="w-full text-left bg-blue-500 text-white p-3 rounded focus:outline-none flex justify-between items-center"
-					onclick="toggleDetails('childrensCourt')"
-				>
-					<span>Children's Court</span>
-					<span id="arrow-childrensCourt">▼</span>
-				</button>
-				<div id="childrensCourt" class="hidden bg-white p-4 rounded shadow-md">
-					<h2 class="text-2xl font-bold mb-2">Children's Court</h2>
-					<p>
-						The Children's Court is a specialized court for dealing with crimes committed by children. However, serious
-						indictable offences committed by a child can be tried in an adult court (e.g., manslaughter or violent
-						crimes).
-					</p>
-					<ul class="list-disc ml-8">
-						<li>
-							Recognizes that children are vulnerable and need to be rehabilitated rather than dealt with harshly.
-						</li>
-						<li>
-							The court aims to be informal and inclusive, discussing the child’s issue with specially trained
-							personnel.
-						</li>
-						<li>Procedures are closed to the public, and media outlets cannot publish names.</li>
-						<li>No jury or debating lawyers are involved.</li>
-						<li>Social workers prepare background reports considering family, social, and health situations.</li>
-					</ul>
-					<p>
-						These processes are governed by the Children’s Court Act 1987, reflecting the Convention of the Rights of
-						the Child (CROC).
-					</p>
+				<div>
+					<button class="dropdown" onclick="toggleDetails('childrensCourt')">
+						<span>Children's Court</span>
+						<span id="arrow-childrensCourt">▼</span>
+					</button>
+					<div id="childrensCourt" class="dropdown-content hidden">
+						<h2 class="h2">Children's Court</h2>
+						<p>
+							The Children's Court is a specialized court for dealing with crimes committed by children. However,
+							serious indictable offences committed by a child can be tried in an adult court (e.g., manslaughter or
+							violent crimes).
+						</p>
+						<ul class="list">
+							<li>
+								Recognizes that children are vulnerable and need to be rehabilitated rather than dealt with harshly.
+							</li>
+							<li>
+								The court aims to be informal and inclusive, discussing the child’s issue with specially trained
+								personnel.
+							</li>
+							<li>Procedures are closed to the public, and media outlets cannot publish names.</li>
+							<li>No jury or debating lawyers are involved.</li>
+							<li>Social workers prepare background reports considering family, social, and health situations.</li>
+						</ul>
+						<p>
+							These processes are governed by the Children’s Court Act 1987, reflecting the Convention of the Rights of
+							the Child (CROC).
+						</p>
+					</div>
 				</div>
-			</div>
 
-			<div class="mb-4">
-				<button
-					class="w-full text-left bg-blue-500 text-white p-3 rounded focus:outline-none flex justify-between items-center"
-					onclick="toggleDetails('criticisms')"
-				>
-					<span>Criticisms</span>
-					<span id="arrow-criticisms">▼</span>
-				</button>
-				<div id="criticisms" class="hidden bg-white p-4 rounded shadow-md">
-					<h2 class="text-2xl font-bold mb-2">Criticisms</h2>
-					<p>
-						There have been criticisms stating that the Children’s Court has not been focusing enough on rehabilitation,
-						with too many young offenders placed in prison.
-					</p>
-					<ul class="list-disc ml-8">
-						<li>
-							The Seen and Heard Report (1997) stated that incarceration, particularly in NSW, is not well dealt with.
-						</li>
-						<li>
-							Children are often placed on remand in the same prisons as convicted child offenders, exposing them to
-							negative influences.
-						</li>
-						<li>High reoffence rate for children who have been to juvenile justice centres in NSW (68.5%).</li>
-						<li>
-							Differences in detention rates: Victoria focuses on diversionary programs (83 juveniles in detention each
-							day) compared to NSW (390 juveniles in detention each day).
-						</li>
-					</ul>
+				<div>
+					<button class="dropdown" onclick="toggleDetails('criticisms')">
+						<span>Criticisms</span>
+						<span id="arrow-criticisms">▼</span>
+					</button>
+					<div id="criticisms" class="dropdown-content hidden">
+						<h2 class="h2">Criticisms</h2>
+						<p>
+							There have been criticisms stating that the Children’s Court has not been focusing enough on
+							rehabilitation, with too many young offenders placed in prison.
+						</p>
+						<ul class="list">
+							<li>
+								The Seen and Heard Report (1997) stated that incarceration, particularly in NSW, is not well dealt with.
+							</li>
+							<li>
+								Children are often placed on remand in the same prisons as convicted child offenders, exposing them to
+								negative influences.
+							</li>
+							<li>High reoffence rate for children who have been to juvenile justice centres in NSW (68.5%).</li>
+							<li>
+								Differences in detention rates: Victoria focuses on diversionary programs (83 juveniles in detention
+								each day) compared to NSW (390 juveniles in detention each day).
+							</li>
+						</ul>
+					</div>
 				</div>
-			</div>
 
-			<div class="mb-4">
-				<button
-					class="w-full text-left bg-blue-500 text-white p-3 rounded focus:outline-none flex justify-between items-center"
-					onclick="toggleDetails('penaltiesChildren')"
-				>
-					<span>Penalties for Children</span>
-					<span id="arrow-penaltiesChildren">▼</span>
-				</button>
-				<div id="penaltiesChildren" class="hidden bg-white p-4 rounded shadow-md">
-					<h2 class="text-2xl font-bold mb-2">Penalties for Children</h2>
-					<ul class="list-disc ml-8">
-						<li>
-							<b>Bond</b>: The court trusts the child to behave or comply with specific conditions for up to 2 years.
-							Failure to comply can result in consequences ranging from fines to imprisonment.
-						</li>
-						<li>
-							<b>Youth Justice Conference</b>: The court orders the youth to confront their victim and resolve the issue
-							in a facilitated conference.
-						</li>
-						<li>
-							<b>Fine</b>: The young offender may be given a fine up to $1100, considering the child’s age and ability
-							to repay.
-						</li>
-						<li>
-							<b>Community Service</b>: The child must contribute to community service, with the amount of time
-							dependent on their age (up to 100 hours for under 16, up to 250 hours for over 16).
-						</li>
-						<li>
-							<b>Control Order</b>: Similar to imprisonment for adults but cannot exceed 2 years. The term 'control
-							order' is used to reduce the stigma associated with the word 'prison'.
-						</li>
-					</ul>
+				<div>
+					<button class="dropdown" onclick="toggleDetails('penaltiesChildren')">
+						<span>Penalties for Children</span>
+						<span id="arrow-penaltiesChildren">▼</span>
+					</button>
+					<div id="penaltiesChildren" class="dropdown-content hidden">
+						<h2 class="h2">Penalties for Children</h2>
+						<ul class="list">
+							<li>
+								<b>Bond:</b> The court trusts the child to behave or comply with specific conditions for up to 2 years.
+								Failure to comply can result in consequences ranging from fines to imprisonment.
+							</li>
+							<li>
+								<b>Youth Justice Conference:</b> The court orders the youth to confront their victim and resolve the
+								issue in a facilitated conference.
+							</li>
+							<li>
+								<b>Fine:</b> The young offender may be given a fine up to $1100, considering the child’s age and ability
+								to repay.
+							</li>
+							<li>
+								<b>Community Service:</b> The child must contribute to community service, with the amount of time
+								dependent on their age (up to 100 hours for under 16, up to 250 hours for over 16).
+							</li>
+							<li>
+								<b>Control Order:</b> Similar to imprisonment for adults but cannot exceed 2 years. The term 'control
+								order' is used to reduce the stigma associated with the word 'prison'.
+							</li>
+						</ul>
+					</div>
 				</div>
-			</div>
 
-			<div class="mb-4">
-				<button
-					class="w-full text-left bg-blue-500 text-white p-3 rounded focus:outline-none flex justify-between items-center"
-					onclick="toggleDetails('recordedConvictions')"
-				>
-					<span>Recorded Convictions</span>
-					<span id="arrow-recordedConvictions">▼</span>
-				</button>
-				<div id="recordedConvictions" class="hidden bg-white p-4 rounded shadow-md">
-					<h2 class="text-2xl font-bold mb-2">Recorded Convictions</h2>
-					<ul class="list-disc ml-8">
-						<li>The Children’s Court cannot record a conviction for offenders under 16.</li>
-						<li>The judge has discretion on whether to record an offence for ages 16 to 18.</li>
-						<li>
-							Exceptions exist for young adults engaging in 'grave adult behaviour' (e.g., murder, assault, armed
-							robbery).
-						</li>
-					</ul>
+				<div>
+					<button class="dropdown" onclick="toggleDetails('recordedConvictions')">
+						<span>Recorded Convictions</span>
+						<span id="arrow-recordedConvictions">▼</span>
+					</button>
+					<div id="recordedConvictions" class="dropdown-content hidden">
+						<h2 class="h2">Recorded Convictions</h2>
+						<ul class="list">
+							<li>The Children’s Court cannot record a conviction for offenders under 16.</li>
+							<li>The judge has discretion on whether to record an offence for ages 16 to 18.</li>
+							<li>
+								Exceptions exist for young adults engaging in 'grave adult behaviour' (e.g., murder, assault, armed
+								robbery).
+							</li>
+						</ul>
+					</div>
 				</div>
-			</div>
 
-			<div class="mb-4">
-				<button
-					class="w-full text-left bg-blue-500 text-white p-3 rounded focus:outline-none flex justify-between items-center"
-					onclick="toggleDetails('alternativesToCourt')"
-				>
-					<span>Alternatives to Court</span>
-					<span id="arrow-alternativesToCourt">▼</span>
-				</button>
-				<div id="alternativesToCourt" class="hidden bg-white p-4 rounded shadow-md">
-					<h2 class="text-2xl font-bold mb-2">Alternatives to Court</h2>
-					<ul class="list-disc ml-8">
-						<li>
-							These alternatives come under the Young Offenders Act 1997 and can apply to various offences, excluding
-							grave adult behaviour.
-						</li>
-						<li>Alternatives include warnings, cautions, and Youth Justice Conferences.</li>
-					</ul>
+				<div>
+					<button class="dropdown" onclick="toggleDetails('alternativesToCourt')">
+						<span>Alternatives to Court</span>
+						<span id="arrow-alternativesToCourt">▼</span>
+					</button>
+					<div id="alternativesToCourt" class="dropdown-content hidden">
+						<h2 class="h2">Alternatives to Court</h2>
+						<ul class="list">
+							<li>
+								These alternatives come under the Young Offenders Act 1997 and can apply to various offences, excluding
+								grave adult behaviour.
+							</li>
+							<li>Alternatives include warnings, cautions, and Youth Justice Conferences.</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>

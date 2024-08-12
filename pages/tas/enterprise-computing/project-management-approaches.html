@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Study Notes | Project Management Approaches</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="nav">
+			<a href="/index.html" class="h2">Study Notes</a>
+			<a href="index.html" class="back-button">Back to topics</a>
+		</nav>
+
+		<!-- Content -->
+		<div class="container">
+			<h1 class="h1">Project Management Approaches</h1>
+			<p class="p1">
+				This section covers various project management approaches such as Outsourcing, End-User Involvement, and Agile
+				Methodology, along with a case study on Tech Solutions Ltd.
+			</p>
+
+			<!-- Detailed sections -->
+			<div class="section">
+				<div>
+					<button class="dropdown" onclick="toggleDetails('outsourcingDetails')">
+						<span>Outsourcing</span>
+						<span id="arrow-outsourcingDetails">▼</span>
+					</button>
+					<div id="outsourcingDetails" class="dropdown-content hidden">
+						<p>
+							Outsourcing is employed when a development team lacks the skills or resources for a specific part of a
+							project. By contracting an external team, the project manager ensures that the project stays on track
+							while the in-house team can focus on other tasks.
+						</p>
+						<br />
+						<p>
+							<b>Example:</b> A project manager might hire a web design company to develop the website portion of an
+							information system.
+						</p>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('endUserDetails')">
+						<span>End-User Involvement</span>
+						<span id="arrow-endUserDetails">▼</span>
+					</button>
+					<div id="endUserDetails" class="dropdown-content hidden">
+						<p>
+							End-users are involved throughout the development process to ensure the system meets their needs. This
+							approach guarantees that the final product is user-friendly and satisfies the intended audience.
+						</p>
+						<br />
+						<p>
+							<b>Example:</b> End-users participate in every stage of development, from requirement gathering to
+							testing.
+						</p>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('agileDetails')">
+						<span>Agile Methodology</span>
+						<span id="arrow-agileDetails">▼</span>
+					</button>
+					<div id="agileDetails" class="dropdown-content hidden">
+						<p>
+							Agile methodology focuses on flexibility and adaptability, with regular iterations and feedback loops.
+							This method is ideal for projects where requirements are likely to change during development.
+						</p>
+						<br />
+						<p>
+							Effective communication, team management, and frequent meetings are critical to the success of the Agile
+							approach.
+						</p>
+						<br />
+						<p>
+							<b>Example:</b> Daily stand-ups and progress reviews help track project milestones and adapt to changes.
+						</p>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('caseStudyDetails')">
+						<span>Case Study: Tech Solutions Ltd.</span>
+						<span id="arrow-caseStudyDetails">▼</span>
+					</button>
+					<div id="caseStudyDetails" class="dropdown-content hidden">
+						<p>
+							<b>Project Goal:</b> Develop a mobile application for a retail client to enhance customer experience and
+							drive sales. The project includes features like product browsing, personalized recommendations, online
+							ordering, and loyalty program integration.
+						</p>
+
+						<ul class="list">
+							<li>
+								<b>Prototyping:</b> Low-fidelity wireframes and mock-ups are used to visualize key functionalities and
+								ensure alignment with client expectations.
+							</li>
+							<li>
+								<b>Outsourcing:</b> Specialized components, like payment gateway integration, are outsourced to external
+								experts to ensure timely delivery and high quality.
+							</li>
+							<li>
+								<b>End-User Involvement:</b> Continuous feedback is gathered from client representatives and potential
+								users to ensure the application meets their needs.
+							</li>
+							<li>
+								<b>Agile Methodology:</b> The project is broken down into smaller iterations with regular progress
+								reviews, allowing the team to adapt and deliver incremental value.
+							</li>
+						</ul>
+
+						<p>
+							Tech Solutions Ltd. successfully delivers the mobile application by combining these approaches, ensuring
+							it meets the client's expectations within the given timeline and budget.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">Max Horvath &copy; 2024</footer>
+
+		<script>
+			// Toggle details visibility
+			function toggleDetails(id) {
+				const details = document.getElementById(id);
+				const arrow = document.getElementById("arrow-" + id);
+				details.classList.toggle("hidden");
+				arrow.textContent = details.classList.contains("hidden") ? "▼" : "▲";
+			}
+		</script>
+	</body>
+</html>

@@ -3,76 +3,34 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Study Notes | Internet of Things</title>
+		<title>Study Notes | Internet of Things (IoT)</title>
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
-		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
 	</head>
-	<body class="bg-gray-100 text-gray-800">
+	<body>
 		<!-- Navigation Bar -->
-		<nav class="bg-blue-600 text-white p-4 relative">
-			<div class="container mx-auto flex justify-between items-center">
-				<a href="index.html" class="text-2xl font-bold">Study Notes</a>
-				<div class="relative">
-					<button class="focus:outline-none" id="dropdownButton">Subjects</button>
-					<div class="absolute right-0 hidden bg-white text-gray-800 py-2 mt-1 rounded shadow-lg w-64" id="dropdown">
-						<!-- Computing subject -->
-						<div class="subject">
-							<button
-								class="subject-btn block px-4 py-2 hover:bg-gray-200 font-bold w-full text-left focus:outline-none"
-								onclick="toggleDropdown('computingTopics')"
-							>
-								Computing
-							</button>
-							<div id="computingTopics" class="subject-topics hidden">
-								<a href="human-centric-computing.html" class="block px-4 py-2 hover:bg-gray-200"
-									>Human-Centric Computing</a
-								>
-								<a href="disruptive-technologies.html" class="block px-4 py-2 hover:bg-gray-200"
-									>Disruptive Technologies</a
-								>
-								<a href="mobile-computing.html" class="block px-4 py-2 hover:bg-gray-200">Mobile Computing</a>
-								<a href="cloud-computing.html" class="block px-4 py-2 hover:bg-gray-200">Cloud Computing</a>
-								<a href="artificial-intelligence.html" class="block px-4 py-2 hover:bg-gray-200"
-									>Artificial Intelligence</a
-								>
-								<a href="blockchain-technology.html" class="block px-4 py-2 hover:bg-gray-200">Blockchain Technology</a>
-								<a href="e-commerce.html" class="block px-4 py-2 hover:bg-gray-200">E-commerce</a>
-								<a href="ride-sharing.html" class="block px-4 py-2 hover:bg-gray-200">Ride-sharing</a>
-								<a href="3d-printing.html" class="block px-4 py-2 hover:bg-gray-200">3D Printing</a>
-								<a href="social-media.html" class="block px-4 py-2 hover:bg-gray-200">Social Media</a>
-								<a href="internet-of-things.html" class="block px-4 py-2 hover:bg-gray-200">Internet of Things</a>
-								<a href="security-in-iot.html" class="block px-4 py-2 hover:bg-gray-200">Security in IoT</a>
-								<a href="graph-network-theory.html" class="block px-4 py-2 hover:bg-gray-200"
-									>Graph and Network Theory</a
-								>
-								<a href="conversion-methods.html" class="block px-4 py-2 hover:bg-gray-200">Conversion Methods</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+		<nav class="nav">
+			<a href="/index.html" class="h2">Study Notes</a>
+			<a href="index.html" class="back-button">Back to topics</a>
 		</nav>
 
 		<!-- Content -->
-		<div class="container mx-auto mt-8 p-4">
-			<h1 class="text-3xl font-bold mb-4">Internet of Things (IoT)</h1>
-			<p class="mb-4">
+		<div class="container">
+			<h1 class="h1">Internet of Things (IoT)</h1>
+			<p class="p1">
 				The Internet of Things (IoT) refers to a network of interconnected devices with embedded sensors, software, and
 				other technologies that enable them to collect and exchange data. This section explores the basics of IoT, its
 				applications, and its impact on various sectors.
 			</p>
 
 			<!-- Detailed sections -->
-			<div class="space-y-4">
+			<div class="section">
 				<div>
-					<button
-						class="w-full text-left bg-blue-500 text-white p-3 rounded focus:outline-none flex justify-between items-center"
-						onclick="toggleDetails('introductionIoTDetails')"
-					>
+					<button class="dropdown" onclick="toggleDetails('introductionIoTDetails')">
 						<span>Introduction to IoT</span>
 						<span id="arrow-introductionIoTDetails">▼</span>
 					</button>
-					<div id="introductionIoTDetails" class="hidden bg-white p-4 rounded shadow-md">
+					<div id="introductionIoTDetails" class="dropdown-content hidden">
 						<p>
 							The Internet of Things (IoT) is a system of interconnected devices that communicate with each other and
 							with other systems over the internet. These devices range from everyday objects like home appliances and
@@ -83,15 +41,12 @@
 				</div>
 
 				<div>
-					<button
-						class="w-full text-left bg-blue-500 text-white p-3 rounded focus:outline-none flex justify-between items-center"
-						onclick="toggleDetails('applicationsIoTDetails')"
-					>
+					<button class="dropdown" onclick="toggleDetails('applicationsIoTDetails')">
 						<span>Applications of IoT</span>
 						<span id="arrow-applicationsIoTDetails">▼</span>
 					</button>
-					<div id="applicationsIoTDetails" class="hidden bg-white p-4 rounded shadow-md">
-						<ul class="list-disc ml-8 mb-4">
+					<div id="applicationsIoTDetails" class="dropdown-content hidden">
+						<ul class="list">
 							<li>
 								<b>Smart Homes:</b> IoT devices like smart thermostats, security cameras, and voice-activated assistants
 								automate and enhance home management.
@@ -113,14 +68,11 @@
 				</div>
 
 				<div>
-					<button
-						class="w-full text-left bg-blue-500 text-white p-3 rounded focus:outline-none flex justify-between items-center"
-						onclick="toggleDetails('impactIoTDetails')"
-					>
+					<button class="dropdown" onclick="toggleDetails('impactIoTDetails')">
 						<span>Impact of IoT</span>
 						<span id="arrow-impactIoTDetails">▼</span>
 					</button>
-					<div id="impactIoTDetails" class="hidden bg-white p-4 rounded shadow-md">
+					<div id="impactIoTDetails" class="dropdown-content hidden">
 						<p>
 							IoT enhances various sectors, including smart cities, healthcare, and manufacturing, by providing
 							real-time data and improving efficiency, safety, and convenience. It also drives innovation, leading to
@@ -131,30 +83,14 @@
 				</div>
 			</div>
 		</div>
+		<footer class="footer">Max Horvath &copy; 2024</footer>
 
 		<script>
-			// JavaScript for dropdown menu
-			document.getElementById("dropdownButton").addEventListener("click", function () {
-				document.getElementById("dropdown").classList.toggle("hidden");
-			});
-			// Close dropdown if clicked outside
-			document.addEventListener("click", function (e) {
-				const target = e.target;
-				if (!target.closest("nav")) {
-					document.getElementById("dropdown").classList.add("hidden");
-				}
-			});
-			// Toggle details visibility
 			function toggleDetails(id) {
 				const details = document.getElementById(id);
 				const arrow = document.getElementById("arrow-" + id);
 				details.classList.toggle("hidden");
 				arrow.textContent = details.classList.contains("hidden") ? "▼" : "▲";
-			}
-			// Toggle subtopics visibility
-			function toggleDropdown(id) {
-				const element = document.getElementById(id);
-				element.classList.toggle("hidden");
 			}
 		</script>
 	</body>

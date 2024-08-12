@@ -5,63 +5,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Study Notes | Conversion Methods</title>
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
-		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
 	</head>
-	<body class="bg-gray-100 text-gray-800">
+	<body>
 		<!-- Navigation Bar -->
-		<nav class="bg-blue-600 text-white p-4 relative">
-			<div class="container mx-auto flex justify-between items-center">
-				<a href="index.html" class="text-2xl font-bold">Study Notes</a>
-				<div class="relative">
-					<button class="focus:outline-none" id="dropdownButton">Subjects</button>
-					<div class="absolute right-0 hidden bg-white text-gray-800 py-2 mt-1 rounded shadow-lg w-64" id="dropdown">
-						<!-- Computing subject -->
-						<div class="subject">
-							<button
-								class="subject-btn block px-4 py-2 hover:bg-gray-200 font-bold w-full text-left focus:outline-none"
-								onclick="toggleDropdown('computingTopics')"
-							>
-								Computing
-							</button>
-							<div id="computingTopics" class="subject-topics hidden">
-								<a href="human-centric-computing.html" class="block px-4 py-2 hover:bg-gray-200"
-									>Human-Centric Computing</a
-								>
-								<a href="disruptive-technologies.html" class="block px-4 py-2 hover:bg-gray-200"
-									>Disruptive Technologies</a
-								>
-								<a href="mobile-computing.html" class="block px-4 py-2 hover:bg-gray-200">Mobile Computing</a>
-								<a href="cloud-computing.html" class="block px-4 py-2 hover:bg-gray-200">Cloud Computing</a>
-								<a href="artificial-intelligence.html" class="block px-4 py-2 hover:bg-gray-200"
-									>Artificial Intelligence</a
-								>
-								<a href="blockchain-technology.html" class="block px-4 py-2 hover:bg-gray-200">Blockchain Technology</a>
-								<a href="e-commerce.html" class="block px-4 py-2 hover:bg-gray-200">E-commerce</a>
-								<a href="ride-sharing.html" class="block px-4 py-2 hover:bg-gray-200">Ride-sharing</a>
-								<a href="3d-printing.html" class="block px-4 py-2 hover:bg-gray-200">3D Printing</a>
-								<a href="social-media.html" class="block px-4 py-2 hover:bg-gray-200">Social Media</a>
-								<a href="internet-of-things.html" class="block px-4 py-2 hover:bg-gray-200">Internet of Things</a>
-								<a href="security-in-iot.html" class="block px-4 py-2 hover:bg-gray-200">Security in IoT</a>
-								<a href="graph-network-theory.html" class="block px-4 py-2 hover:bg-gray-200"
-									>Graph and Network Theory</a
-								>
-								<a href="conversion-methods.html" class="block px-4 py-2 hover:bg-gray-200">Conversion Methods</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+		<nav class="nav">
+			<a href="/index.html" class="h2">Study Notes</a>
+			<a href="index.html" class="back-button">Back to topics</a>
 		</nav>
 
 		<!-- Content -->
-		<div class="container mx-auto mt-8 p-4">
-			<h1 class="text-3xl font-bold mb-4">Conversion Methods</h1>
-			<p class="mb-4">
-				Conversion methods are how firms and enterprise roll out new features or systems to a platform or their users.
+		<div class="container">
+			<h1 class="h1">Conversion Methods</h1>
+			<p class="p1">
+				Conversion methods are how firms and enterprises roll out new features or systems to a platform or their users.
 			</p>
-			<h2 class="text-2xl font-bold mb-2 mt-8">Types of Conversion Methods</h2>
-			<p class="mb-4">There are several types of conversion methods, including:</p>
-			<ul class="list-disc ml-8 mb-8">
+			<h2 class="h2">Types of Conversion Methods</h2>
+			<p class="p1">There are several types of conversion methods, including:</p>
+			<ul class="list">
 				<li>Direct Conversions</li>
 				<li>Phased Conversions</li>
 				<li>Parallel Conversions</li>
@@ -69,16 +30,13 @@
 			</ul>
 
 			<!-- Conversion Methods Details -->
-			<div class="space-y-4">
+			<div class="section">
 				<div>
-					<button
-						class="w-full text-left bg-blue-500 text-white p-3 rounded focus:outline-none flex justify-between items-center"
-						onclick="toggleDetails('directDetails')"
-					>
+					<button class="dropdown" onclick="toggleDetails('directDetails')">
 						<span>Direct Conversions</span>
 						<span id="arrow-directDetails">▼</span>
 					</button>
-					<div id="directDetails" class="hidden bg-white p-4 rounded shadow-md">
+					<div id="directDetails" class="dropdown-content hidden">
 						<p>
 							A direct conversion is when a company stops using the old system and starts using the new system at a
 							specific point in time. This can be risky because even with sufficient testing, it is impossible to make
@@ -88,17 +46,14 @@
 				</div>
 
 				<div>
-					<button
-						class="w-full text-left bg-blue-500 text-white p-3 rounded focus:outline-none flex justify-between items-center"
-						onclick="toggleDetails('phasedDetails')"
-					>
+					<button class="dropdown" onclick="toggleDetails('phasedDetails')">
 						<span>Phased Conversions</span>
 						<span id="arrow-phasedDetails">▼</span>
 					</button>
-					<div id="phasedDetails" class="hidden bg-white p-4 rounded shadow-md">
+					<div id="phasedDetails" class="dropdown-content hidden">
 						<p>
 							Phased conversion is a conversion that is slowly integrated with the new and slowly removes the old. An
-							example of this is a school has a new system to manage sports and each team’s athletes. The old system is
+							example of this is a school with a new system to manage sports and each team’s athletes. The old system is
 							paper and pencil. Over time, a new system is introduced to manage students, their teams, seasons, and
 							their coaches. At ﬁrst, the new system manages teams. Then the new system manages seasons (and school
 							terms). When users are familiar with that process, the system is expanded to include the management of
@@ -109,14 +64,11 @@
 				</div>
 
 				<div>
-					<button
-						class="w-full text-left bg-blue-500 text-white p-3 rounded focus:outline-none flex justify-between items-center"
-						onclick="toggleDetails('parallelDetails')"
-					>
+					<button class="dropdown" onclick="toggleDetails('parallelDetails')">
 						<span>Parallel Conversions</span>
 						<span id="arrow-parallelDetails">▼</span>
 					</button>
-					<div id="parallelDetails" class="hidden bg-white p-4 rounded shadow-md">
+					<div id="parallelDetails" class="dropdown-content hidden">
 						<p>
 							The new system is introduced while the old one is still in use. Both systems process all activity and the
 							results are compared. Once there is confidence that the new one operates properly, the old one is shut
@@ -126,47 +78,29 @@
 				</div>
 
 				<div>
-					<button
-						class="w-full text-left bg-blue-500 text-white p-3 rounded focus:outline-none flex justify-between items-center"
-						onclick="toggleDetails('pilotDetails')"
-					>
+					<button class="dropdown" onclick="toggleDetails('pilotDetails')">
 						<span>Pilot Conversions</span>
 						<span id="arrow-pilotDetails">▼</span>
 					</button>
-					<div id="pilotDetails" class="hidden bg-white p-4 rounded shadow-md">
+					<div id="pilotDetails" class="dropdown-content hidden">
 						<p>
-							Pilot Conversions are when part of an organisation uses the new system while the rest of it continues to
-							use the old. This localises problems to the pilot group so support resources can focus on it. However,
-							there can be interface issues where organisational units share data.
+							Pilot Conversions are when part of an organization uses the new system while the rest of it continues to
+							use the old. This localizes problems to the pilot group so support resources can focus on it. However,
+							there can be interface issues where organizational units share data.
 						</p>
 					</div>
 				</div>
 			</div>
 		</div>
+		<footer class="footer">Max Horvath &copy; 2024</footer>
 
 		<script>
-			// JavaScript for dropdown menu
-			document.getElementById("dropdownButton").addEventListener("click", function () {
-				document.getElementById("dropdown").classList.toggle("hidden");
-			});
-			// Close dropdown if clicked outside
-			document.addEventListener("click", function (e) {
-				const target = e.target;
-				if (!target.closest("nav")) {
-					document.getElementById("dropdown").classList.add("hidden");
-				}
-			});
 			// Toggle details visibility
 			function toggleDetails(id) {
 				const details = document.getElementById(id);
 				const arrow = document.getElementById("arrow-" + id);
 				details.classList.toggle("hidden");
 				arrow.textContent = details.classList.contains("hidden") ? "▼" : "▲";
-			}
-			// Toggle subtopics visibility
-			function toggleDropdown(id) {
-				const element = document.getElementById(id);
-				element.classList.toggle("hidden");
 			}
 		</script>
 	</body>
