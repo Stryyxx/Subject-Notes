@@ -75,7 +75,6 @@ body {
 	background-color: var(--lightcolor);
 	color: var(--white);
 	font-size: var(--fontlg);
-	border: #2b2a29 2px solid;
 	border-radius: 8px;
 	height: 75px;
 	flex: 1;
@@ -110,7 +109,7 @@ body {
 	color: var(--white);
 	font-size: var(--fontxl);
 	border-radius: 8px;
-	height: 100px;
+	height: 85px;
 	min-width: 200px;
 	display: flex;
 	justify-content: center;
@@ -157,6 +156,10 @@ body {
 	transform: scale(1.1);
 }
 
+.homepage {
+	justify-content: center;
+}
+
 .back-button {
 	background-color: var(--lightcolor);
 	color: var(--white);
@@ -167,7 +170,7 @@ body {
 }
 
 .dropdown {
-	background-color: var(--primaryaccent);
+	background-color: var(--secondaryaccent);
 	color: var(--white);
 	width: 100%;
 	display: flex;
@@ -179,7 +182,7 @@ body {
 }
 
 .dropdown:hover {
-	background-color: var(--secondaryaccent);
+	background-color: var(--primaryaccent);
 	box-shadow: var(--shadow);
 }
 
