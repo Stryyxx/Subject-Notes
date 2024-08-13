@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Study Notes | Transport Mechanisms</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="nav">
+			<a href="/index.html" class="h2">Study Notes</a>
+			<a href="/pages/science/biology/index.html" class="back-button">Back to topics</a>
+		</nav>
+
+		<!-- Content -->
+		<div class="container">
+			<h1 class="h1">Transport Mechanisms</h1>
+			<p class="p1">
+				Transport mechanisms are processes that move substances across the cell membrane. These include both passive and
+				active transport methods, which ensure the cell maintains homeostasis by regulating the internal environment.
+			</p>
+
+			<!-- Detailed sections -->
+			<div class="section">
+				<div>
+					<button class="dropdown" onclick="toggleDetails('passiveTransportDetails')">
+						<span>Passive Transport</span>
+						<span id="arrow-passiveTransportDetails">▼</span>
+					</button>
+					<div id="passiveTransportDetails" class="dropdown-content hidden">
+						<p>
+							Passive transport mechanisms move substances down their concentration gradient without the use of cellular
+							energy (ATP). This includes diffusion, osmosis, and facilitated diffusion.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Diffusion:</b> Movement of molecules from an area of higher concentration to one of lower
+								concentration until equilibrium is reached.
+							</li>
+							<li>
+								<b>Osmosis:</b> Diffusion of water across a selectively permeable membrane, crucial for maintaining cell
+								turgor in plants.
+							</li>
+							<li>
+								<b>Facilitated Diffusion:</b> Uses carrier proteins to move larger or polar molecules across the
+								membrane without energy.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('activeTransportDetails')">
+						<span>Active Transport</span>
+						<span id="arrow-activeTransportDetails">▼</span>
+					</button>
+					<div id="activeTransportDetails" class="dropdown-content hidden">
+						<p>
+							Active transport requires energy (usually ATP) to move substances against their concentration gradient.
+							This is essential for maintaining concentration differences across membranes.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Sodium-Potassium Pump:</b> Moves sodium ions out of the cell and potassium ions into the cell,
+								critical for nerve function.
+							</li>
+							<li>
+								<b>Endocytosis:</b> Process by which the cell membrane engulfs extracellular material to bring it into
+								the cell.
+							</li>
+							<li>
+								<b>Exocytosis:</b> The reverse process of endocytosis, where materials are expelled from the cell.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">Your Name &copy; 2024</footer>
+
+		<script>
+			// Toggle details visibility
+			function toggleDetails(id) {
+				const details = document.getElementById(id);
+				const arrow = document.getElementById("arrow-" + id);
+				details.classList.toggle("hidden");
+				arrow.textContent = details.classList.contains("hidden") ? "▼" : "▲";
+			}
+		</script>
+	</body>
+</html>

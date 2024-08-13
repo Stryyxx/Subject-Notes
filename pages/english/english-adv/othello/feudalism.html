@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Study Notes | Feudalism</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="nav">
+			<a href="/index.html" class="h2">Study Notes</a>
+			<a href="/pages/english/english-adv/index.html" class="back-button">Back to topics</a>
+		</nav>
+
+		<!-- Content -->
+		<div class="container">
+			<h1 class="h1">Feudalism</h1>
+			<p class="p1">
+				Feudalism was a hierarchical system prevalent in medieval Europe, characterized by the division of society into
+				distinct classes with specific roles and responsibilities. This system played a crucial role in shaping the
+				political, social, and economic landscape of the time.
+			</p>
+
+			<!-- Detailed sections -->
+			<div class="section">
+				<div>
+					<button class="dropdown" onclick="toggleDetails('socialStructureDetails')">
+						<span>Social Structure</span>
+						<span id="arrow-socialStructureDetails">▼</span>
+					</button>
+					<div id="socialStructureDetails" class="dropdown-content hidden">
+						<p>
+							Feudal society was divided into rigid classes, each with specific duties and privileges. The structure was
+							hierarchical, with the king at the top, followed by nobles, knights, and peasants.
+						</p>
+						<ul class="list">
+							<li>
+								<b>King:</b> The highest authority, owning all land and granting fiefs to nobles in exchange for loyalty
+								and service.
+							</li>
+							<li>
+								<b>Nobles:</b> Vassals to the king, controlling land and providing military service in return for
+								protection and privileges.
+							</li>
+							<li>
+								<b>Knights:</b> Warriors who pledged to defend their lords’ territories in exchange for land or a place
+								in the noble household.
+							</li>
+							<li>
+								<b>Peasants:</b> The majority of the population, working the land and providing goods and services in
+								return for protection.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('landOwnershipDetails')">
+						<span>Land Ownership</span>
+						<span id="arrow-landOwnershipDetails">▼</span>
+					</button>
+					<div id="landOwnershipDetails" class="dropdown-content hidden">
+						<p>
+							Land ownership was central to feudalism, with lords granting land to vassals in exchange for military and
+							political loyalty. This system created a network of allegiances that structured medieval society.
+						</p>
+						<ul class="list">
+							<li><b>Fiefs:</b> Land granted by a lord to a vassal in exchange for service and loyalty.</li>
+							<li>
+								<b>Manorial System:</b> Economic structure of feudal society, with manors as self-sufficient units
+								controlled by lords.
+							</li>
+							<li>
+								<b>Serfs:</b> Peasants bound to the land, who provided labor and a share of their produce to the lord.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">Your Name &copy; 2024</footer>
+
+		<script>
+			// Toggle details visibility
+			function toggleDetails(id) {
+				const details = document.getElementById(id);
+				const arrow = document.getElementById("arrow-" + id);
+				details.classList.toggle("hidden");
+				arrow.textContent = details.classList.contains("hidden") ? "▼" : "▲";
+			}
+		</script>
+	</body>
+</html>

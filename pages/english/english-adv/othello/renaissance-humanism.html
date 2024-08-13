@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Study Notes | Renaissance Humanism</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="nav">
+			<a href="/index.html" class="h2">Study Notes</a>
+			<a href="/pages/english/english-adv/index.html" class="back-button">Back to topics</a>
+		</nav>
+
+		<!-- Content -->
+		<div class="container">
+			<h1 class="h1">Renaissance Humanism</h1>
+			<p class="p1">
+				Renaissance Humanism was an intellectual movement that focused on the study of classical texts and the belief in
+				the potential of human achievement. It marked a shift from the medieval focus on divine authority to a greater
+				emphasis on human potential and achievement.
+			</p>
+
+			<!-- Detailed sections -->
+			<div class="section">
+				<div>
+					<button class="dropdown" onclick="toggleDetails('classicalRevivalDetails')">
+						<span>Classical Revival</span>
+						<span id="arrow-classicalRevivalDetails">▼</span>
+					</button>
+					<div id="classicalRevivalDetails" class="dropdown-content hidden">
+						<p>
+							Renaissance humanism was characterized by a renewed interest in the literature, art, and philosophy of
+							ancient Greece and Rome. This revival influenced many aspects of the Renaissance, including education,
+							politics, and art.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Literature:</b> The study of classical texts, such as those by Homer, Virgil, and Cicero, became
+								central to humanist education.
+							</li>
+							<li>
+								<b>Philosophy:</b> Classical philosophical ideas, particularly those of Plato and Aristotle, were
+								integrated into Renaissance thought.
+							</li>
+							<li>
+								<b>Art:</b> Artists drew inspiration from classical forms and techniques, emphasizing realism,
+								proportion, and the human figure.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('humanDignityDetails')">
+						<span>Human Dignity</span>
+						<span id="arrow-humanDignityDetails">▼</span>
+					</button>
+					<div id="humanDignityDetails" class="dropdown-content hidden">
+						<p>
+							Human dignity was a core belief of Renaissance humanism, emphasizing the inherent worth and potential of
+							each individual. This concept contrasted with the medieval view of humans as inherently sinful and
+							dependent on divine grace.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Individual Worth:</b> Each person was believed to have unique value and potential, worthy of respect
+								and development.
+							</li>
+							<li>
+								<b>Education:</b> Humanists advocated for education that fostered the full development of an
+								individual’s talents and intellect.
+							</li>
+							<li>
+								<b>Civic Responsibility:</b> Individuals were encouraged to use their talents for the betterment of
+								society, reflecting their dignity and worth.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('secularKnowledgeDetails')">
+						<span>Secular Knowledge</span>
+						<span id="arrow-secularKnowledgeDetails">▼</span>
+					</button>
+					<div id="secularKnowledgeDetails" class="dropdown-content hidden">
+						<p>
+							Renaissance humanism placed a strong emphasis on the pursuit of knowledge outside of religious contexts.
+							This included a focus on science, philosophy, and the humanities, grounded in empirical observation and
+							critical thinking.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Science:</b> The Renaissance saw significant advancements in science, with figures like Galileo and
+								Copernicus challenging traditional views.
+							</li>
+							<li>
+								<b>Philosophy:</b> Humanist philosophers sought to reconcile classical ideas with contemporary thought,
+								often challenging religious dogma.
+							</li>
+							<li>
+								<b>The Humanities:</b> The study of history, literature, and ethics became central to education,
+								fostering a well-rounded intellectual development.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">Your Name &copy; 2024</footer>
+
+		<script>
+			// Toggle details visibility
+			function toggleDetails(id) {
+				const details = document.getElementById(id);
+				const arrow = document.getElementById("arrow-" + id);
+				details.classList.toggle("hidden");
+				arrow.textContent = details.classList.contains("hidden") ? "▼" : "▲";
+			}
+		</script>
+	</body>
+</html>

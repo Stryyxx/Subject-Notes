@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Study Notes | Providentialism</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="nav">
+			<a href="/index.html" class="h2">Study Notes</a>
+			<a href="/pages/english/english-adv/index.html" class="back-button">Back to topics</a>
+		</nav>
+
+		<!-- Content -->
+		<div class="container">
+			<h1 class="h1">Providentialism</h1>
+			<p class="p1">
+				Providentialism is the belief that God is the ultimate authority and that all events on Earth unfold according
+				to His divine will. This concept is reflected in the moral and ethical decisions of characters within the play,
+				often justifying their actions as part of a divine plan.
+			</p>
+
+			<!-- Detailed sections -->
+			<div class="section">
+				<div>
+					<button class="dropdown" onclick="toggleDetails('divineOrderDetails')">
+						<span>Divine Order</span>
+						<span id="arrow-divineOrderDetails">▼</span>
+					</button>
+					<div id="divineOrderDetails" class="dropdown-content hidden">
+						<p>
+							Divine order refers to the belief that the social and political hierarchy is ordained by God. This belief
+							was used to justify the established order and the actions of those in power.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Hierarchy:</b> The idea that kings, nobles, and clergy were placed in their positions by divine will,
+								and challenging them was akin to challenging God.
+							</li>
+							<li>
+								<b>Moral Authority:</b> Leaders were seen as moral exemplars, whose decisions were guided by divine
+								wisdom.
+							</li>
+							<li>
+								<b>Justice:</b> The belief that divine justice would ultimately prevail, with wrongdoers punished and
+								the virtuous rewarded.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('fateVsFreeWillDetails')">
+						<span>Fate vs. Free Will</span>
+						<span id="arrow-fateVsFreeWillDetails">▼</span>
+					</button>
+					<div id="fateVsFreeWillDetails" class="dropdown-content hidden">
+						<p>
+							The tension between fate and free will is a recurring theme in "Othello," with characters grappling with
+							their own autonomy and the belief that their actions are predetermined by a divine plan.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Predestination:</b> The belief that all events, including human actions, are predetermined by God.
+							</li>
+							<li>
+								<b>Agency:</b> Characters struggle with the extent of their control over their own lives and destinies.
+							</li>
+							<li>
+								<b>Tragic Flaws:</b> Characters’ tragic flaws are often viewed as part of their divine fate, leading to
+								their downfall.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">Your Name &copy; 2024</footer>
+
+		<script>
+			// Toggle details visibility
+			function toggleDetails(id) {
+				const details = document.getElementById(id);
+				const arrow = document.getElementById("arrow-" + id);
+				details.classList.toggle("hidden");
+				arrow.textContent = details.classList.contains("hidden") ? "▼" : "▲";
+			}
+		</script>
+	</body>
+</html>

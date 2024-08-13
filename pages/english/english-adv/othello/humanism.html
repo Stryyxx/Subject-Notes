@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Study Notes | Humanism</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="nav">
+			<a href="/index.html" class="h2">Study Notes</a>
+			<a href="/pages/english/english-adv/index.html" class="back-button">Back to topics</a>
+		</nav>
+
+		<!-- Content -->
+		<div class="container">
+			<h1 class="h1">Humanism</h1>
+			<p class="p1">
+				Humanism is a philosophical stance that emphasizes the value and agency of human beings, individually and
+				collectively. Humanism in "Othello" is reflected in the focus on personal honor, integrity, and the revival of
+				classical ideas.
+			</p>
+
+			<!-- Detailed sections -->
+			<div class="section">
+				<div>
+					<button class="dropdown" onclick="toggleDetails('individualismDetails')">
+						<span>Individualism</span>
+						<span id="arrow-individualismDetails">▼</span>
+					</button>
+					<div id="individualismDetails" class="dropdown-content hidden">
+						<p>
+							Individualism is a key aspect of humanism, emphasizing the importance of personal autonomy and the
+							capacity for reason. In "Othello," characters assert their individuality and make choices based on
+							personal values and beliefs.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Self-Determination:</b> The belief in the individual’s ability to make choices and control their own
+								destiny.
+							</li>
+							<li>
+								<b>Personal Honor:</b> Characters are driven by a sense of personal honor and reputation, often leading
+								to conflict.
+							</li>
+							<li>
+								<b>Rationality:</b> The capacity for reason and logical thought is valued, with decisions often
+								reflecting personal reasoning rather than divine will.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('secularismDetails')">
+						<span>Secularism</span>
+						<span id="arrow-secularismDetails">▼</span>
+					</button>
+					<div id="secularismDetails" class="dropdown-content hidden">
+						<p>
+							Secularism in humanism represents a shift away from religious explanations of the world towards a more
+							human-centered understanding. This is reflected in the play’s focus on human emotions, motivations, and
+							experiences.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Focus on Human Experience:</b> The play emphasizes human emotions and motivations, rather than divine
+								intervention.
+							</li>
+							<li>
+								<b>Ethical Behavior:</b> Morality is viewed in terms of human relationships and personal ethics, rather
+								than religious doctrine.
+							</li>
+							<li>
+								<b>Empirical Knowledge:</b> A growing emphasis on knowledge derived from observation and experience,
+								rather than religious texts.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('classicalInfluencesDetails')">
+						<span>Classical Influences</span>
+						<span id="arrow-classicalInfluencesDetails">▼</span>
+					</button>
+					<div id="classicalInfluencesDetails" class="dropdown-content hidden">
+						<p>
+							Renaissance humanism revived interest in the classical literature and philosophy of ancient Greece and
+							Rome. This influence is seen in the play’s themes, characterizations, and moral dilemmas.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Classical Tragedy:</b> The structure and themes of "Othello" are influenced by classical tragic
+								forms.
+							</li>
+							<li>
+								<b>Philosophical Inquiry:</b> Characters engage in philosophical reflection, often drawing on classical
+								ideas of virtue, justice, and fate.
+							</li>
+							<li>
+								<b>Art and Literature:</b> References to classical mythology and literature are woven throughout the
+								play, enriching its themes and characterizations.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">Your Name &copy; 2024</footer>
+
+		<script>
+			// Toggle details visibility
+			function toggleDetails(id) {
+				const details = document.getElementById(id);
+				const arrow = document.getElementById("arrow-" + id);
+				details.classList.toggle("hidden");
+				arrow.textContent = details.classList.contains("hidden") ? "▼" : "▲";
+			}
+		</script>
+	</body>
+</html>

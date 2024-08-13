@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Study Notes | Cell Types</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="nav">
+			<a href="/index.html" class="h2">Study Notes</a>
+			<a href="/pages/science/biology/index.html" class="back-button">Back to topics</a>
+		</nav>
+
+		<!-- Content -->
+		<div class="container">
+			<h1 class="h1">Cell Types</h1>
+			<p class="p1">
+				Cells come in many different shapes and sizes, each specialized to carry out specific functions within an
+				organism. This section explores the two major types of cells: prokaryotic and eukaryotic cells.
+			</p>
+
+			<!-- Detailed sections -->
+			<div class="section">
+				<div>
+					<button class="dropdown" onclick="toggleDetails('prokaryoticCellsDetails')">
+						<span>Prokaryotic Cells</span>
+						<span id="arrow-prokaryoticCellsDetails">▼</span>
+					</button>
+					<div id="prokaryoticCellsDetails" class="dropdown-content hidden">
+						<p>
+							Prokaryotic cells are the simplest type of cells, lacking a nucleus and other membrane-bound organelles.
+							These cells are typically found in bacteria and archaea.
+						</p>
+						<ul class="list">
+							<li><b>Nucleoid Region:</b> Area where the cell's DNA is located, not enclosed by a membrane.</li>
+							<li><b>Plasma Membrane:</b> Surrounds the cell, controlling the movement of substances in and out.</li>
+							<li><b>Ribosomes:</b> Sites of protein synthesis, floating freely in the cytoplasm.</li>
+							<li>
+								<b>Cell Wall:</b> Provides structural support and protection, typically composed of peptidoglycan in
+								bacteria.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('eukaryoticCellsDetails')">
+						<span>Eukaryotic Cells</span>
+						<span id="arrow-eukaryoticCellsDetails">▼</span>
+					</button>
+					<div id="eukaryoticCellsDetails" class="dropdown-content hidden">
+						<p>
+							Eukaryotic cells are more complex than prokaryotic cells, containing a nucleus and various membrane-bound
+							organelles. They make up all plant, animal, fungi, and protist cells.
+						</p>
+						<ul class="list">
+							<li><b>Nucleus:</b> Contains the cell's genetic material (DNA) and controls cellular activities.</li>
+							<li><b>Mitochondria:</b> Powerhouse of the cell, generating ATP through cellular respiration.</li>
+							<li>
+								<b>Endoplasmic Reticulum (ER):</b> Involved in the synthesis of proteins (rough ER) and lipids (smooth
+								ER).
+							</li>
+							<li>
+								<b>Golgi Apparatus:</b> Modifies, sorts, and packages proteins and lipids for secretion or use within
+								the cell.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">Your Name &copy; 2024</footer>
+
+		<script>
+			// Toggle details visibility
+			function toggleDetails(id) {
+				const details = document.getElementById(id);
+				const arrow = document.getElementById("arrow-" + id);
+				details.classList.toggle("hidden");
+				arrow.textContent = details.classList.contains("hidden") ? "▼" : "▲";
+			}
+		</script>
+	</body>
+</html>

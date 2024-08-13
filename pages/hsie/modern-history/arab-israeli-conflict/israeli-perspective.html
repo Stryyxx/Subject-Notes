@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Study Notes | Israeli Perspective</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="nav">
+			<a href="/index.html" class="h2">Study Notes</a>
+			<a href="/pages/hsie/modern-history/index.html" class="back-button">Back to topics</a>
+		</nav>
+
+		<!-- Content -->
+		<div class="container">
+			<h1 class="h1">Israeli Perspective</h1>
+			<p class="p1">
+				The Israeli perspective on the conflict is shaped by historical ties to the land, religious beliefs, and the
+				desire for a secure homeland. Zionism plays a central role in this narrative, advocating for the
+				re-establishment of a Jewish state in the ancestral land of Palestine.
+			</p>
+
+			<!-- Detailed sections -->
+			<div class="section">
+				<div>
+					<button class="dropdown" onclick="toggleDetails('zionismDetails')">
+						<span>Zionism</span>
+						<span id="arrow-zionismDetails">▼</span>
+					</button>
+					<div id="zionismDetails" class="dropdown-content hidden">
+						<p>
+							Zionism is a nationalist movement that emerged in the late 19th century, advocating for the return of Jews
+							to their ancestral homeland in Palestine and the establishment of a Jewish state.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Historical Roots:</b> The movement was driven by the persecution of Jews in Europe and the desire to
+								create a safe and independent Jewish state.
+							</li>
+							<li>
+								<b>Jerusalem:</b> Central to Zionist aspirations, Jerusalem is viewed as the historic and eternal
+								capital of the Jewish people.
+							</li>
+							<li>
+								<b>Immigration Waves:</b> Significant waves of Jewish immigration to Palestine began in the late 19th
+								and early 20th centuries, often in response to anti-Semitic violence in Europe.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('homelandDetails')">
+						<span>Belief in the Right to Land</span>
+						<span id="arrow-homelandDetails">▼</span>
+					</button>
+					<div id="homelandDetails" class="dropdown-content hidden">
+						<p>
+							Many Israelis believe in their historical and religious right to the land of Palestine, seeing it as the
+							biblical homeland promised to the Jewish people by God. This belief has been a driving force behind the
+							establishment and expansion of the state of Israel.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Biblical Promises:</b> The belief that God promised the land to the descendants of Abraham, Isaac,
+								and Jacob.
+							</li>
+							<li>
+								<b>Historical Presence:</b> Archaeological evidence and historical records are cited to support Jewish
+								claims to the land.
+							</li>
+							<li>
+								<b>International Support:</b> The Balfour Declaration and subsequent international agreements recognized
+								the right of Jews to establish a homeland in Palestine.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">Your Name &copy; 2024</footer>
+
+		<script>
+			// Toggle details visibility
+			function toggleDetails(id) {
+				const details = document.getElementById(id);
+				const arrow = document.getElementById("arrow-" + id);
+				details.classList.toggle("hidden");
+				arrow.textContent = details.classList.contains("hidden") ? "▼" : "▲";
+			}
+		</script>
+	</body>
+</html>

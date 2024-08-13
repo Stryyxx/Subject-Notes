@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Study Notes | The Tragic Form</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="nav">
+			<a href="/index.html" class="h2">Study Notes</a>
+			<a href="/pages/english/english-adv/index.html" class="back-button">Back to topics</a>
+		</nav>
+
+		<!-- Content -->
+		<div class="container">
+			<h1 class="h1">The Tragic Form</h1>
+			<p class="p1">
+				Othello is a prime example of a classical tragedy, where the tragic form is defined by the downfall of a noble
+				character due to a combination of personal flaws and external forces. The play explores themes of fate, free
+				will, and the consequences of human error.
+			</p>
+
+			<!-- Detailed sections -->
+			<div class="section">
+				<div>
+					<button class="dropdown" onclick="toggleDetails('tragicHeroDetails')">
+						<span>Tragic Hero</span>
+						<span id="arrow-tragicHeroDetails">▼</span>
+					</button>
+					<div id="tragicHeroDetails" class="dropdown-content hidden">
+						<p>
+							Othello, as the tragic hero, is a man of high status and noble character, whose tragic flaw (hamartia)
+							leads to his downfall. His jealousy, manipulated by Iago, drives the plot toward its tragic conclusion.
+						</p>
+						<ul class="list">
+							<li><b>High Status:</b> Othello is a respected general, admired for his military prowess.</li>
+							<li><b>Hamartia:</b> His jealousy and trust in Iago become the catalysts for his tragic fall.</li>
+							<li>
+								<b>Hubris:</b> Othello's pride prevents him from seeing the truth about Iago and Desdemona until it is
+								too late.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('epistemologicalCrisisDetails')">
+						<span>Epistemological Crisis</span>
+						<span id="arrow-epistemologicalCrisisDetails">▼</span>
+					</button>
+					<div id="epistemologicalCrisisDetails" class="dropdown-content hidden">
+						<p>
+							The epistemological crisis in Othello revolves around the conflict between appearance and reality.
+							Othello's inability to discern the truth leads to his tragic decisions, as he relies on Iago's deceitful
+							words rather than his own judgment.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Appearance vs. Reality:</b> Iago's manipulations create a false reality for Othello, leading him to
+								mistrust Desdemona.
+							</li>
+							<li>
+								<b>Misinterpretation:</b> Othello misinterprets events and actions, contributing to his tragic errors.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('catharsisDetails')">
+						<span>Catharsis</span>
+						<span id="arrow-catharsisDetails">▼</span>
+					</button>
+					<div id="catharsisDetails" class="dropdown-content hidden">
+						<p>
+							The concept of catharsis refers to the emotional release experienced by the audience as they witness the
+							tragic events unfold. In Othello, the audience feels pity for the protagonist and fear of the consequences
+							of his actions, culminating in a moral lesson.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Pity:</b> The audience sympathizes with Othello, despite his flaws, as they see how Iago's
+								manipulations lead to his tragic end.
+							</li>
+							<li>
+								<b>Fear:</b> The play evokes fear by illustrating the destructive power of jealousy and the consequences
+								of misplaced trust.
+							</li>
+							<li>
+								<b>Moral Lesson:</b> The tragedy serves as a warning about the dangers of letting emotions cloud
+								judgment.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">Your Name &copy; 2024</footer>
+
+		<script>
+			// Toggle details visibility
+			function toggleDetails(id) {
+				const details = document.getElementById(id);
+				const arrow = document.getElementById("arrow-" + id);
+				details.classList.toggle("hidden");
+				arrow.textContent = details.classList.contains("hidden") ? "▼" : "▲";
+			}
+		</script>
+	</body>
+</html>

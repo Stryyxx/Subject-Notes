@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Study Notes | The Sykes-Picot Agreement</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="nav">
+			<a href="/index.html" class="h2">Study Notes</a>
+			<a href="/pages/hsie/modern-history/index.html" class="back-button">Back to topics</a>
+		</nav>
+
+		<!-- Content -->
+		<div class="container">
+			<h1 class="h1">The Sykes-Picot Agreement</h1>
+			<p class="p1">
+				The Sykes-Picot Agreement, signed in 1916, was a secret treaty between Britain and France, with the assent of
+				Russia, dividing the Ottoman Empire’s territories in the Middle East between them. The agreement had a
+				significant impact on the region, setting the stage for modern-day borders and conflicts.
+			</p>
+
+			<!-- Detailed sections -->
+			<div class="section">
+				<div>
+					<button class="dropdown" onclick="toggleDetails('divisionDetails')">
+						<span>Division of Territories</span>
+						<span id="arrow-divisionDetails">▼</span>
+					</button>
+					<div id="divisionDetails" class="dropdown-content hidden">
+						<p>
+							The Sykes-Picot Agreement divided the Middle East into British and French spheres of influence, with areas
+							of direct and indirect control. This division ignored ethnic and religious boundaries, leading to
+							long-term tensions.
+						</p>
+						<ul class="list">
+							<li>
+								<b>French Mandate:</b> France was given control over modern-day Syria and Lebanon, as well as influence
+								over parts of southeastern Turkey.
+							</li>
+							<li>
+								<b>British Mandate:</b> Britain was granted control over modern-day Iraq, Jordan, and Palestine, with
+								additional influence in the Persian Gulf.
+							</li>
+							<li>
+								<b>Impact on Arabs:</b> The agreement contradicted earlier promises made to Arab leaders regarding
+								independence, leading to feelings of betrayal and resentment.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('longTermEffectsDetails')">
+						<span>Long-Term Effects</span>
+						<span id="arrow-longTermEffectsDetails">▼</span>
+					</button>
+					<div id="longTermEffectsDetails" class="dropdown-content hidden">
+						<p>
+							The Sykes-Picot Agreement had profound long-term effects on the Middle East, contributing to the creation
+							of artificial borders that have fueled conflicts and tensions throughout the 20th and 21st centuries.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Artificial Borders:</b> The borders drawn by the agreement often disregarded the ethnic, religious,
+								and tribal realities on the ground, leading to instability.
+							</li>
+							<li>
+								<b>Rise of Nationalism:</b> The agreement spurred Arab nationalism and a sense of betrayal, leading to
+								resistance against colonial powers.
+							</li>
+							<li>
+								<b>Ongoing Conflicts:</b> Many of the conflicts in the Middle East, including the Arab-Israeli conflict,
+								can be traced back to the divisions imposed by Sykes-Picot.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">Your Name &copy; 2024</footer>
+
+		<script>
+			// Toggle details visibility
+			function toggleDetails(id) {
+				const details = document.getElementById(id);
+				const arrow = document.getElementById("arrow-" + id);
+				details.classList.toggle("hidden");
+				arrow.textContent = details.classList.contains("hidden") ? "▼" : "▲";
+			}
+		</script>
+	</body>
+</html>

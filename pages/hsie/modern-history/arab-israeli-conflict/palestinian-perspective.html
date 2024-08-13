@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Study Notes | Palestinian Perspective</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="nav">
+			<a href="/index.html" class="h2">Study Notes</a>
+			<a href="/pages/hsie/modern-history/index.html" class="back-button">Back to topics</a>
+		</nav>
+
+		<!-- Content -->
+		<div class="container">
+			<h1 class="h1">Palestinian Perspective</h1>
+			<p class="p1">
+				From the Palestinian perspective, the land of Palestine is seen as their ancestral home, and the influx of
+				Jewish immigrants, supported by Zionism, is viewed as a colonial imposition. The Palestinian national identity
+				has been shaped by the struggle against this perceived threat to their land and way of life.
+			</p>
+
+			<!-- Detailed sections -->
+			<div class="section">
+				<div>
+					<button class="dropdown" onclick="toggleDetails('palestinianIdentityDetails')">
+						<span>Palestinian Identity</span>
+						<span id="arrow-palestinianIdentityDetails">▼</span>
+					</button>
+					<div id="palestinianIdentityDetails" class="dropdown-content hidden">
+						<p>
+							The Palestinian national identity has developed in response to the Zionist movement and the subsequent
+							creation of the state of Israel. This identity is rooted in the connection to the land and the collective
+							experience of displacement and resistance.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Historical Connection:</b> Palestinians trace their history in the land back centuries, seeing
+								themselves as the rightful inhabitants.
+							</li>
+							<li>
+								<b>Resistance to Zionism:</b> The Palestinian identity has been shaped by opposition to Zionism and the
+								defense of their homeland.
+							</li>
+							<li>
+								<b>Displacement:</b> The experiences of the Nakba (catastrophe), when many Palestinians were displaced
+								in 1948, are central to the Palestinian narrative.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('resistanceZionismDetails')">
+						<span>Resistance to Zionism</span>
+						<span id="arrow-resistanceZionismDetails">▼</span>
+					</button>
+					<div id="resistanceZionismDetails" class="dropdown-content hidden">
+						<p>
+							Resistance to Zionism has been a key aspect of the Palestinian struggle, with many viewing the Zionist
+							project as a colonial enterprise that threatens their existence on the land.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Political Resistance:</b> Efforts to oppose Zionist policies through political means, both locally
+								and internationally.
+							</li>
+							<li>
+								<b>Armed Struggle:</b> Various Palestinian groups have taken up arms in an effort to reclaim their land
+								and resist Israeli control.
+							</li>
+							<li>
+								<b>International Solidarity:</b> The Palestinian cause has gained support from other anti-colonial
+								movements around the world.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">Your Name &copy; 2024</footer>
+
+		<script>
+			// Toggle details visibility
+			function toggleDetails(id) {
+				const details = document.getElementById(id);
+				const arrow = document.getElementById("arrow-" + id);
+				details.classList.toggle("hidden");
+				arrow.textContent = details.classList.contains("hidden") ? "▼" : "▲";
+			}
+		</script>
+	</body>
+</html>

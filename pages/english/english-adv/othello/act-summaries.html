@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Study Notes | Act Summaries</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="nav">
+			<a href="/index.html" class="h2">Study Notes</a>
+			<a href="/pages/english/english-adv/index.html" class="back-button">Back to topics</a>
+		</nav>
+
+		<!-- Content -->
+		<div class="container">
+			<h1 class="h1">Act Summaries</h1>
+			<p class="p1">
+				Othello is divided into five acts, each contributing to the progression of the plot and the development of the
+				tragedy. Understanding the key events in each act is crucial to comprehending the overall narrative and themes
+				of the play.
+			</p>
+
+			<!-- Detailed sections -->
+			<div class="section">
+				<div>
+					<button class="dropdown" onclick="toggleDetails('act1SummaryDetails')">
+						<span>Act 1 Summary</span>
+						<span id="arrow-act1SummaryDetails">▼</span>
+					</button>
+					<div id="act1SummaryDetails" class="dropdown-content hidden">
+						<p>
+							Act 1 introduces the main characters and the central conflict. Othello's secret marriage to Desdemona is
+							revealed, and Iago begins to plot against Othello out of jealousy and resentment.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Othello and Desdemona's Marriage:</b> Their union is met with shock and disapproval by Brabantio.
+							</li>
+							<li><b>Iago's Deception:</b> Iago convinces Roderigo to assist in his plot against Othello.</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('act2SummaryDetails')">
+						<span>Act 2 Summary</span>
+						<span id="arrow-act2SummaryDetails">▼</span>
+					</button>
+					<div id="act2SummaryDetails" class="dropdown-content hidden">
+						<p>
+							In Act 2, tensions rise as Iago's manipulations begin to take effect. Othello's trust in Iago grows, and
+							his suspicion of Desdemona's fidelity starts to take root.
+						</p>
+						<ul class="list">
+							<li><b>Arrival in Cyprus:</b> The characters arrive in Cyprus, where the seeds of jealousy are sown.</li>
+							<li>
+								<b>Iago's Plot:</b> Iago begins to insinuate Desdemona's infidelity, planting doubt in Othello's mind.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('act3SummaryDetails')">
+						<span>Act 3 Summary</span>
+						<span id="arrow-act3SummaryDetails">▼</span>
+					</button>
+					<div id="act3SummaryDetails" class="dropdown-content hidden">
+						<p>
+							Act 3 is the climax of the play, where Othello's jealousy and anger reach their peak. The infamous
+							handkerchief scene cements Othello's belief in Desdemona's infidelity.
+						</p>
+						<ul class="list">
+							<li>
+								<b>The Handkerchief:</b> A key symbol of fidelity is manipulated by Iago to fuel Othello's jealousy.
+							</li>
+							<li><b>Othello's Decision:</b> Othello resolves to take action against Desdemona.</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('act4SummaryDetails')">
+						<span>Act 4 Summary</span>
+						<span id="arrow-act4SummaryDetails">▼</span>
+					</button>
+					<div id="act4SummaryDetails" class="dropdown-content hidden">
+						<p>
+							Act 4 depicts the consequences of Othello's jealousy as events spiral out of control. The characters'
+							fates are sealed as the tragedy unfolds.
+						</p>
+						<ul class="list">
+							<li><b>Othello's Torment:</b> Othello's internal conflict leads to irrational decisions.</li>
+							<li><b>Desdemona's Innocence:</b> Despite her innocence, Desdemona cannot escape Othello's wrath.</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('act5SummaryDetails')">
+						<span>Act 5 Summary</span>
+						<span id="arrow-act5SummaryDetails">▼</span>
+					</button>
+					<div id="act5SummaryDetails" class="dropdown-content hidden">
+						<p>
+							Act 5 brings the tragic resolution, where Othello realizes the truth too late, leading to the deaths of
+							multiple characters and Othello's own demise.
+						</p>
+						<ul class="list">
+							<li><b>The Tragic End:</b> Othello kills Desdemona and then himself after realizing his mistake.</li>
+							<li>
+								<b>Iago's Fate:</b> Iago is finally exposed, but his fate remains uncertain as he refuses to explain his
+								motives.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">Your Name &copy; 2024</footer>
+
+		<script>
+			// Toggle details visibility
+			function toggleDetails(id) {
+				const details = document.getElementById(id);
+				const arrow = document.getElementById("arrow-" + id);
+				details.classList.toggle("hidden");
+				arrow.textContent = details.classList.contains("hidden") ? "▼" : "▲";
+			}
+		</script>
+	</body>
+</html>

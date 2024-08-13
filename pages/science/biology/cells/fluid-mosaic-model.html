@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Study Notes | Fluid Mosaic Model</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="nav">
+			<a href="/index.html" class="h2">Study Notes</a>
+			<a href="/pages/science/biology/index.html" class="back-button">Back to topics</a>
+		</nav>
+
+		<!-- Content -->
+		<div class="container">
+			<h1 class="h1">Fluid Mosaic Model</h1>
+			<p class="p1">
+				The Fluid Mosaic Model describes the structure of the plasma membrane as a mosaic of components including
+				phospholipids, cholesterol, proteins, and carbohydrates. This model explains the dynamic and flexible nature of
+				the membrane.
+			</p>
+
+			<!-- Detailed sections -->
+			<div class="section">
+				<div>
+					<button class="dropdown" onclick="toggleDetails('membraneStructureDetails')">
+						<span>Membrane Structure</span>
+						<span id="arrow-membraneStructureDetails">▼</span>
+					</button>
+					<div id="membraneStructureDetails" class="dropdown-content hidden">
+						<p>
+							The plasma membrane is primarily composed of a bilayer of phospholipids, with proteins and other molecules
+							embedded within. This composition allows the membrane to be fluid and selectively permeable.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Phospholipid Bilayer:</b> Forms the basic structure, with hydrophilic heads facing outward and
+								hydrophobic tails inward.
+							</li>
+							<li>
+								<b>Proteins:</b> Integral and peripheral proteins serve functions in transport, signal transduction, and
+								cell recognition.
+							</li>
+							<li>
+								<b>Cholesterol:</b> Helps maintain fluidity and stability by preventing the fatty acid chains from
+								sticking together.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('transportMechanismsDetails')">
+						<span>Transport Mechanisms</span>
+						<span id="arrow-transportMechanismsDetails">▼</span>
+					</button>
+					<div id="transportMechanismsDetails" class="dropdown-content hidden">
+						<p>
+							Transport mechanisms are processes that control the movement of substances across the cell membrane. These
+							include passive transport (such as diffusion and osmosis) and active transport, which requires energy.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Passive Transport:</b> Includes diffusion, osmosis, and facilitated diffusion, moving substances down
+								their concentration gradient without energy use.
+							</li>
+							<li>
+								<b>Active Transport:</b> Moves substances against their concentration gradient, requiring ATP (e.g.,
+								sodium-potassium pump).
+							</li>
+							<li>
+								<b>Endocytosis and Exocytosis:</b> Processes for moving large molecules or particles into (endocytosis)
+								or out of (exocytosis) the cell.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">Your Name &copy; 2024</footer>
+
+		<script>
+			// Toggle details visibility
+			function toggleDetails(id) {
+				const details = document.getElementById(id);
+				const arrow = document.getElementById("arrow-" + id);
+				details.classList.toggle("hidden");
+				arrow.textContent = details.classList.contains("hidden") ? "▼" : "▲";
+			}
+		</script>
+	</body>
+</html>

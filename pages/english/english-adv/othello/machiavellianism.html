@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Study Notes | Machiavellianism</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="nav">
+			<a href="/index.html" class="h2">Study Notes</a>
+			<a href="/pages/english/english-adv/index.html" class="back-button">Back to topics</a>
+		</nav>
+
+		<!-- Content -->
+		<div class="container">
+			<h1 class="h1">Machiavellianism</h1>
+			<p class="p1">
+				Machiavellianism is characterized by cunning, manipulation, and a pragmatic approach to power. In "Othello,"
+				this trait is embodied by the character of Iago, who uses deceit and manipulation to achieve his goals,
+				regardless of the moral consequences.
+			</p>
+
+			<!-- Detailed sections -->
+			<div class="section">
+				<div>
+					<button class="dropdown" onclick="toggleDetails('manipulationDetails')">
+						<span>Manipulation</span>
+						<span id="arrow-manipulationDetails">▼</span>
+					</button>
+					<div id="manipulationDetails" class="dropdown-content hidden">
+						<p>
+							Manipulation is a key feature of Machiavellianism, where individuals use deceit and psychological tactics
+							to control and influence others to achieve their ends.
+						</p>
+						<ul class="list">
+							<li><b>Psychological Tactics:</b> Using fear, guilt, and flattery to influence others’ decisions.</li>
+							<li><b>Deceit:</b> Lying and creating false appearances to mislead others and gain an advantage.</li>
+							<li>
+								<b>Exploitation:</b> Taking advantage of others’ weaknesses and vulnerabilities to achieve personal
+								goals.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('pragmatismDetails')">
+						<span>Pragmatism</span>
+						<span id="arrow-pragmatismDetails">▼</span>
+					</button>
+					<div id="pragmatismDetails" class="dropdown-content hidden">
+						<p>
+							Pragmatism in Machiavellianism refers to a focus on outcomes rather than on moral or ethical principles.
+							Actions are judged by their effectiveness in achieving goals, not by their adherence to conventional
+							morality.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Ends Justify the Means:</b> The belief that any action is acceptable if it leads to the desired
+								result.
+							</li>
+							<li>
+								<b>Flexibility:</b> Adapting one’s approach as circumstances change, without being bound by principles.
+							</li>
+							<li>
+								<b>Calculative Reasoning:</b> Carefully weighing options and choosing the most effective strategy,
+								regardless of moral implications.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('powerDynamicsDetails')">
+						<span>Power Dynamics</span>
+						<span id="arrow-powerDynamicsDetails">▼</span>
+					</button>
+					<div id="powerDynamicsDetails" class="dropdown-content hidden">
+						<p>
+							Power dynamics in "Othello" are central to the unfolding of the plot, with characters like Iago
+							manipulating others to gain power and control over their actions and decisions.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Hierarchical Manipulation:</b> Using one’s position within a social hierarchy to exert influence over
+								others.
+							</li>
+							<li>
+								<b>Subversion of Authority:</b> Undermining those in power through deceit and strategic manipulation.
+							</li>
+							<li>
+								<b>Control of Information:</b> Controlling the flow of information to manipulate others’ perceptions and
+								actions.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">Your Name &copy; 2024</footer>
+
+		<script>
+			// Toggle details visibility
+			function toggleDetails(id) {
+				const details = document.getElementById(id);
+				const arrow = document.getElementById("arrow-" + id);
+				details.classList.toggle("hidden");
+				arrow.textContent = details.classList.contains("hidden") ? "▼" : "▲";
+			}
+		</script>
+	</body>
+</html>

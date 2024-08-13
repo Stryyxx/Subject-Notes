@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Study Notes | Photosynthesis</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="nav">
+			<a href="/index.html" class="h2">Study Notes</a>
+			<a href="/pages/science/biology/index.html" class="back-button">Back to topics</a>
+		</nav>
+
+		<!-- Content -->
+		<div class="container">
+			<h1 class="h1">Photosynthesis</h1>
+			<p class="p1">
+				Photosynthesis is the process by which plants, algae, and some bacteria convert light energy into chemical
+				energy, storing it in the bonds of glucose molecules. This process is vital for life on Earth as it provides the
+				primary energy source for nearly all ecosystems.
+			</p>
+
+			<!-- Detailed sections -->
+			<div class="section">
+				<div>
+					<button class="dropdown" onclick="toggleDetails('photosynthesisOverviewDetails')">
+						<span>Photosynthesis Overview</span>
+						<span id="arrow-photosynthesisOverviewDetails">▼</span>
+					</button>
+					<div id="photosynthesisOverviewDetails" class="dropdown-content hidden">
+						<p>
+							Photosynthesis occurs in the chloroplasts of plant cells, where light energy is used to convert carbon
+							dioxide and water into glucose and oxygen.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Light Reactions:</b> The first stage, where light energy is captured and used to produce ATP and
+								NADPH.
+							</li>
+							<li>
+								<b>Calvin Cycle:</b> The second stage, where ATP and NADPH are used to fix carbon dioxide into glucose.
+							</li>
+							<li>
+								<b>Chlorophyll:</b> The primary pigment involved in photosynthesis, absorbing light most efficiently in
+								the blue and red parts of the spectrum.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('importancePhotosynthesisDetails')">
+						<span>Importance of Photosynthesis</span>
+						<span id="arrow-importancePhotosynthesisDetails">▼</span>
+					</button>
+					<div id="importancePhotosynthesisDetails" class="dropdown-content hidden">
+						<p>
+							Photosynthesis is not only crucial for plants but also for all living organisms, as it is the foundation
+							of the food chain and is responsible for the oxygenation of the atmosphere.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Energy Source:</b> Provides energy-rich glucose for plants, which is then used by other organisms in
+								the food chain.
+							</li>
+							<li>
+								<b>Oxygen Production:</b> Releases oxygen as a byproduct, which is essential for the respiration of
+								aerobic organisms.
+							</li>
+							<li>
+								<b>Carbon Cycle:</b> Plays a critical role in the carbon cycle by removing carbon dioxide from the
+								atmosphere and storing it in organic molecules.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">Your Name &copy; 2024</footer>
+
+		<script>
+			// Toggle details visibility
+			function toggleDetails(id) {
+				const details = document.getElementById(id);
+				const arrow = document.getElementById("arrow-" + id);
+				details.classList.toggle("hidden");
+				arrow.textContent = details.classList.contains("hidden") ? "▼" : "▲";
+			}
+		</script>
+	</body>
+</html>

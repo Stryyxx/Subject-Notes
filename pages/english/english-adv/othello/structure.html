@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Study Notes | Structure</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="nav">
+			<a href="/index.html" class="h2">Study Notes</a>
+			<a href="/pages/english/english-adv/index.html" class="back-button">Back to topics</a>
+		</nav>
+
+		<!-- Content -->
+		<div class="container">
+			<h1 class="h1">Structure</h1>
+			<p class="p1">
+				The structure of Othello plays a significant role in how the tragedy unfolds. Shakespeare employs a 5-act
+				structure, where each act contributes to the overall development of the plot and characters. Understanding the
+				structure is essential to grasping the progression of the story and the eventual downfall of the tragic hero.
+			</p>
+
+			<!-- Detailed sections -->
+			<div class="section">
+				<div>
+					<button class="dropdown" onclick="toggleDetails('fiveActStructureDetails')">
+						<span>5-Act Structure</span>
+						<span id="arrow-fiveActStructureDetails">▼</span>
+					</button>
+					<div id="fiveActStructureDetails" class="dropdown-content hidden">
+						<p>
+							Othello is divided into five acts, each serving a specific purpose in advancing the narrative and
+							intensifying the tragic elements of the play.
+						</p>
+						<ul class="list">
+							<li><b>Act 1:</b> Introduction of characters and the initial conflict.</li>
+							<li><b>Act 2:</b> Rising action, where tensions start to build.</li>
+							<li><b>Act 3:</b> The climax, where the turning point occurs.</li>
+							<li><b>Act 4:</b> Falling action, as events spiral out of control.</li>
+							<li><b>Act 5:</b> The resolution, culminating in the tragic ending.</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('tragicFormDetails')">
+						<span>The Tragic Form</span>
+						<span id="arrow-tragicFormDetails">▼</span>
+					</button>
+					<div id="tragicFormDetails" class="dropdown-content hidden">
+						<p>
+							The tragic form of Othello is rooted in classical tragedy, where a noble character experiences downfall
+							due to a tragic flaw and external forces.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Tragic Hero:</b> Othello is a high-ranking individual who possesses a tragic flaw, leading to his
+								downfall.
+							</li>
+							<li><b>Hamartia:</b> Othello's jealousy and trust in Iago become his undoing.</li>
+							<li><b>Hubris:</b> Othello's excessive pride prevents him from seeing the truth.</li>
+							<li><b>Peripeteia:</b> The reversal of fortune when Othello realizes the truth too late.</li>
+							<li>
+								<b>Catharsis:</b> The audience experiences a sense of pity and fear, culminating in a moral lesson.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">Your Name &copy; 2024</footer>
+
+		<script>
+			// Toggle details visibility
+			function toggleDetails(id) {
+				const details = document.getElementById(id);
+				const arrow = document.getElementById("arrow-" + id);
+				details.classList.toggle("hidden");
+				arrow.textContent = details.classList.contains("hidden") ? "▼" : "▲";
+			}
+		</script>
+	</body>
+</html>

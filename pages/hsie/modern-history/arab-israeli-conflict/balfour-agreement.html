@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Study Notes | Balfour Agreement</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="nav">
+			<a href="/index.html" class="h2">Study Notes</a>
+			<a href="/pages/hsie/modern-history/index.html" class="back-button">Back to topics</a>
+		</nav>
+
+		<!-- Content -->
+		<div class="container">
+			<h1 class="h1">Balfour Agreement</h1>
+			<p class="p1">
+				The Balfour Agreement, issued in 1917, was a letter from British Foreign Secretary Arthur Balfour to Lord
+				Rothschild, a leader of the British Jewish community, expressing the British government’s support for the
+				establishment of a "national home for the Jewish people" in Palestine. The declaration was a significant step
+				toward the creation of the state of Israel, but it also laid the groundwork for conflict with the Arab
+				population of Palestine.
+			</p>
+
+			<!-- Detailed sections -->
+			<div class="section">
+				<div>
+					<button class="dropdown" onclick="toggleDetails('keyPointsDetails')">
+						<span>Key Points of the Balfour Agreement</span>
+						<span id="arrow-keyPointsDetails">▼</span>
+					</button>
+					<div id="keyPointsDetails" class="dropdown-content hidden">
+						<p>
+							The Balfour Agreement contained key points that would have lasting implications for the region, including
+							support for a Jewish homeland and the recognition of the rights of non-Jewish communities in Palestine.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Jewish Homeland:</b> The British government expressed its support for the establishment of a national
+								home for the Jewish people in Palestine.
+							</li>
+							<li>
+								<b>Non-Jewish Communities:</b> The declaration also stated that the rights of non-Jewish communities in
+								Palestine should not be prejudiced.
+							</li>
+							<li>
+								<b>Diplomatic Implications:</b> The agreement was a diplomatic victory for the Zionist movement, gaining
+								formal support from a major world power.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('mandateDetails')">
+						<span>Mandate for Palestine</span>
+						<span id="arrow-mandateDetails">▼</span>
+					</button>
+					<div id="mandateDetails" class="dropdown-content hidden">
+						<p>
+							The Balfour Agreement later became part of the British Mandate for Palestine, with Britain given the
+							responsibility of implementing the terms of the declaration while governing Palestine under League of
+							Nations auspices.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Mandate System:</b> The League of Nations granted Britain the mandate to govern Palestine, with the
+								goal of preparing the territory for self-rule.
+							</li>
+							<li>
+								<b>Implementation Challenges:</b> Britain faced significant challenges in implementing the Balfour
+								Declaration, as tensions between Jews and Arabs escalated.
+							</li>
+							<li>
+								<b>Conflicting Promises:</b> The Balfour Agreement conflicted with earlier promises made to Arab leaders
+								during World War I, contributing to Arab discontent.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">Your Name &copy; 2024</footer>
+
+		<script>
+			// Toggle details visibility
+			function toggleDetails(id) {
+				const details = document.getElementById(id);
+				const arrow = document.getElementById("arrow-" + id);
+				details.classList.toggle("hidden");
+				arrow.textContent = details.classList.contains("hidden") ? "▼" : "▲";
+			}
+		</script>
+	</body>
+</html>

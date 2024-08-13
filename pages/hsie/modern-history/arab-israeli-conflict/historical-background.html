@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Study Notes | Historical Background</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="nav">
+			<a href="/index.html" class="h2">Study Notes</a>
+			<a href="/pages/hsie/modern-history/index.html" class="back-button">Back to topics</a>
+		</nav>
+
+		<!-- Content -->
+		<div class="container">
+			<h1 class="h1">Historical Background</h1>
+			<p class="p1">
+				The Arab-Israeli conflict has deep historical roots, beginning with the control of Palestine by the Ottoman
+				Empire and evolving through the British mandate period and the subsequent establishment of the state of Israel.
+			</p>
+
+			<!-- Detailed sections -->
+			<div class="section">
+				<div>
+					<button class="dropdown" onclick="toggleDetails('ottomanRuleDetails')">
+						<span>Ottoman Rule</span>
+						<span id="arrow-ottomanRuleDetails">▼</span>
+					</button>
+					<div id="ottomanRuleDetails" class="dropdown-content hidden">
+						<p>
+							Under the Ottoman Empire, Palestine was a diverse region, home to Muslims, Christians, and Jews. The
+							Ottoman administration maintained relative stability, but tensions between religious communities
+							occasionally flared.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Religious Diversity:</b> The region was religiously diverse, with a majority Muslim population and
+								significant Christian and Jewish minorities.
+							</li>
+							<li>
+								<b>Local Governance:</b> The Ottomans allowed a degree of local autonomy, with religious communities
+								managing their own affairs through the millet system.
+							</li>
+							<li>
+								<b>Economic Conditions:</b> Palestine was a largely agrarian society, with agriculture forming the
+								backbone of the economy.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('britishMandateDetails')">
+						<span>British Mandate</span>
+						<span id="arrow-britishMandateDetails">▼</span>
+					</button>
+					<div id="britishMandateDetails" class="dropdown-content hidden">
+						<p>
+							Following World War I, the British took control of Palestine under a League of Nations mandate, leading to
+							increased tensions between Jewish and Arab communities as Jewish immigration accelerated.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Balfour Declaration:</b> The British government’s 1917 declaration supporting the establishment of a
+								"national home for the Jewish people" in Palestine.
+							</li>
+							<li>
+								<b>Immigration and Land Purchases:</b> Increased Jewish immigration and land purchases fueled Arab fears
+								of dispossession and led to growing tensions.
+							</li>
+							<li>
+								<b>Arab Revolt (1936-1939):</b> A major Arab uprising against British rule and Jewish immigration,
+								leading to significant violence and repression.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('unPartitionPlanDetails')">
+						<span>UN Partition Plan</span>
+						<span id="arrow-unPartitionPlanDetails">▼</span>
+					</button>
+					<div id="unPartitionPlanDetails" class="dropdown-content hidden">
+						<p>
+							In 1947, the United Nations proposed a plan to partition Palestine into separate Jewish and Arab states,
+							with Jerusalem as an international city. This plan was accepted by the Jews but rejected by the Arabs,
+							leading to the 1948 Arab-Israeli War.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Partition Borders:</b> The plan proposed dividing Palestine into roughly equal areas for Jews and
+								Arabs, with complex borders and shared economic resources.
+							</li>
+							<li>
+								<b>Jerusalem:</b> The plan designated Jerusalem as a corpus separatum, an internationally administered
+								city due to its religious significance.
+							</li>
+							<li>
+								<b>Rejection and War:</b> The Arab states and Palestinian leadership rejected the plan, leading to
+								conflict as the British withdrew and Israel declared independence.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">Your Name &copy; 2024</footer>
+
+		<script>
+			// Toggle details visibility
+			function toggleDetails(id) {
+				const details = document.getElementById(id);
+				const arrow = document.getElementById("arrow-" + id);
+				details.classList.toggle("hidden");
+				arrow.textContent = details.classList.contains("hidden") ? "▼" : "▲";
+			}
+		</script>
+	</body>
+</html>

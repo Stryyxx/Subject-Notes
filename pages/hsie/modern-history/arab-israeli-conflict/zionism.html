@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Study Notes | Zionism</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="nav">
+			<a href="/index.html" class="h2">Study Notes</a>
+			<a href="/pages/hsie/modern-history/index.html" class="back-button">Back to topics</a>
+		</nav>
+
+		<!-- Content -->
+		<div class="container">
+			<h1 class="h1">Zionism</h1>
+			<p class="p1">
+				Zionism is a nationalist movement that emerged in the late 19th century with the goal of establishing a Jewish
+				homeland in the land of Israel. It has played a central role in the Arab-Israeli conflict, particularly in the
+				establishment of the state of Israel.
+			</p>
+
+			<!-- Detailed sections -->
+			<div class="section">
+				<div>
+					<button class="dropdown" onclick="toggleDetails('zionismGoalDetails')">
+						<span>Goal of Zionism</span>
+						<span id="arrow-zionismGoalDetails">▼</span>
+					</button>
+					<div id="zionismGoalDetails" class="dropdown-content hidden">
+						<p>
+							The primary goal of Zionism was to establish a Jewish homeland in Palestine, where Jews could live in
+							safety and self-determination. This goal was motivated by centuries of persecution and the desire for a
+							secure national home.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Herzl’s Vision:</b> Theodor Herzl, often considered the father of modern Zionism, advocated for a
+								Jewish state as a solution to anti-Semitism.
+							</li>
+							<li>
+								<b>First Zionist Congress:</b> Held in 1897 in Basel, Switzerland, the Congress set the foundation for
+								the political and practical efforts to establish a Jewish state.
+							</li>
+							<li>
+								<b>Immigration Waves:</b> Several waves of Jewish immigration, known as Aliyah, brought thousands of
+								Jews to Palestine, where they established settlements.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('impactDetails')">
+						<span>Impact of Zionism</span>
+						<span id="arrow-impactDetails">▼</span>
+					</button>
+					<div id="impactDetails" class="dropdown-content hidden">
+						<p>
+							Zionism had a profound impact on the region, leading to the creation of the state of Israel and the
+							displacement of many Palestinians. The movement remains a central element in the ongoing conflict.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Creation of Israel:</b> In 1948, Israel was established as a Jewish state, fulfilling the Zionist
+								dream but also leading to war and displacement.
+							</li>
+							<li>
+								<b>Arab-Israeli Conflict:</b> Zionism is a key factor in the conflict, as Arab states and Palestinians
+								opposed the establishment of a Jewish state on what they considered Arab land.
+							</li>
+							<li>
+								<b>Continued Controversy:</b> Zionism continues to be a contentious issue, with debates over its
+								implications for Palestinians and the broader Middle East.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">Your Name &copy; 2024</footer>
+
+		<script>
+			// Toggle details visibility
+			function toggleDetails(id) {
+				const details = document.getElementById(id);
+				const arrow = document.getElementById("arrow-" + id);
+				details.classList.toggle("hidden");
+				arrow.textContent = details.classList.contains("hidden") ? "▼" : "▲";
+			}
+		</script>
+	</body>
+</html>

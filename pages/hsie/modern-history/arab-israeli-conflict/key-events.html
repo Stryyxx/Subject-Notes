@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Study Notes | Key Events in the Arab-Israeli Conflict</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="nav">
+			<a href="/index.html" class="h2">Study Notes</a>
+			<a href="/pages/hsie/modern-history/index.html" class="back-button">Back to topics</a>
+		</nav>
+
+		<!-- Content -->
+		<div class="container">
+			<h1 class="h1">Key Events in the Arab-Israeli Conflict</h1>
+			<p class="p1">
+				The Arab-Israeli conflict has been shaped by several key events, including wars, diplomatic efforts, and
+				changing political realities. Understanding these events is crucial to grasping the complexity and persistence
+				of the conflict.
+			</p>
+
+			<!-- Detailed sections -->
+			<div class="section">
+				<div>
+					<button class="dropdown" onclick="toggleDetails('war1948Details')">
+						<span>1948 Arab-Israeli War</span>
+						<span id="arrow-war1948Details">▼</span>
+					</button>
+					<div id="war1948Details" class="dropdown-content hidden">
+						<p>
+							The 1948 Arab-Israeli War, also known as the War of Independence by Israelis and the Nakba (Catastrophe)
+							by Palestinians, was the first major conflict in the Arab-Israeli struggle. It resulted in the
+							establishment of Israel and the displacement of a large number of Palestinians.
+						</p>
+						<ul class="list">
+							<li>
+								<b>British Withdrawal:</b> The war began following the end of the British mandate and the withdrawal of
+								British forces from Palestine.
+							</li>
+							<li>
+								<b>Declaration of Independence:</b> On May 14, 1948, Israel declared its independence, prompting
+								immediate invasion by neighboring Arab states.
+							</li>
+							<li>
+								<b>Displacement:</b> Approximately 700,000 Palestinians were displaced during the war, many becoming
+								refugees in neighboring countries.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('sixDayWarDetails')">
+						<span>Six-Day War (1967)</span>
+						<span id="arrow-sixDayWarDetails">▼</span>
+					</button>
+					<div id="sixDayWarDetails" class="dropdown-content hidden">
+						<p>
+							The Six-Day War was a brief but pivotal conflict in which Israel fought against Egypt, Jordan, and Syria.
+							The war resulted in Israel’s capture of the West Bank, Gaza Strip, Sinai Peninsula, and Golan Heights,
+							significantly altering the political landscape of the region.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Preemptive Strikes:</b> Israel launched preemptive air strikes against Egypt on June 5, 1967,
+								crippling the Egyptian air force.
+							</li>
+							<li>
+								<b>Territorial Gains:</b> Israel captured the West Bank and East Jerusalem from Jordan, the Gaza Strip
+								and Sinai Peninsula from Egypt, and the Golan Heights from Syria.
+							</li>
+							<li>
+								<b>Aftermath:</b> The war led to a significant increase in the number of Palestinian refugees and
+								intensified the Israeli-Palestinian conflict.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('gazaStripDetails')">
+						<span>Gaza Strip and Hamas</span>
+						<span id="arrow-gazaStripDetails">▼</span>
+					</button>
+					<div id="gazaStripDetails" class="dropdown-content hidden">
+						<p>
+							The Gaza Strip has been a focal point of the Arab-Israeli conflict, particularly since the rise of Hamas,
+							a Palestinian Islamist militant organization that took control of Gaza in 2007.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Hamas’ Rise:</b> Hamas emerged during the First Intifada and became a significant political and
+								military force in the Palestinian territories.
+							</li>
+							<li>
+								<b>2007 Split:</b> In 2007, Hamas took control of the Gaza Strip after a violent conflict with Fatah,
+								leading to a split in Palestinian governance.
+							</li>
+							<li>
+								<b>Blockade and Conflicts:</b> Israel and Egypt imposed a blockade on Gaza, and the region has since
+								seen multiple conflicts between Israel and Hamas.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">Your Name &copy; 2024</footer>
+
+		<script>
+			// Toggle details visibility
+			function toggleDetails(id) {
+				const details = document.getElementById(id);
+				const arrow = document.getElementById("arrow-" + id);
+				details.classList.toggle("hidden");
+				arrow.textContent = details.classList.contains("hidden") ? "▼" : "▲";
+			}
+		</script>
+	</body>
+</html>

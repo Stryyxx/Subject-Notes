@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Study Notes | Cell Structure</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="nav">
+			<a href="/index.html" class="h2">Study Notes</a>
+			<a href="/pages/science/biology/index.html" class="back-button">Back to topics</a>
+		</nav>
+
+		<!-- Content -->
+		<div class="container">
+			<h1 class="h1">Cell Structure</h1>
+			<p class="p1">
+				Cell structure refers to the organization of all components within a cell. This includes the membrane,
+				cytoplasm, and various organelles that perform specific functions. Understanding cell structure is crucial for
+				comprehending how biological systems function at a molecular level.
+			</p>
+
+			<!-- Detailed sections -->
+			<div class="section">
+				<div>
+					<button class="dropdown" onclick="toggleDetails('cellMembraneDetails')">
+						<span>Cell Membrane</span>
+						<span id="arrow-cellMembraneDetails">▼</span>
+					</button>
+					<div id="cellMembraneDetails" class="dropdown-content hidden">
+						<p>
+							The cell membrane, also known as the plasma membrane, is a bi-layer made of phospholipids that encloses
+							the cell. It regulates what enters and exits the cell and provides protection and structure. Embedded
+							proteins within the membrane assist in communication and transport processes.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Phospholipid Bilayer:</b> Comprised of hydrophilic heads and hydrophobic tails, creating a
+								semi-permeable barrier.
+							</li>
+							<li>
+								<b>Proteins:</b> Integral and peripheral proteins play roles in signaling, transport, and maintaining
+								the cell's shape.
+							</li>
+							<li><b>Cholesterol:</b> Adds fluidity and stability to the membrane, affecting membrane permeability.</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('cytoplasmDetails')">
+						<span>Cytoplasm</span>
+						<span id="arrow-cytoplasmDetails">▼</span>
+					</button>
+					<div id="cytoplasmDetails" class="dropdown-content hidden">
+						<p>
+							The cytoplasm is the jelly-like substance within the cell membrane that contains all the organelles and
+							cell parts. It is composed mainly of water, salts, and proteins. The cytoplasm helps to move materials
+							around the cell and also dissolves cellular waste.
+						</p>
+						<ul class="list">
+							<li><b>Cytosol:</b> The fluid component where metabolic reactions occur.</li>
+							<li>
+								<b>Cytoskeleton:</b> A network of fibers that provides support, shape, and facilitates movement of the
+								cell and its organelles.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('nucleusDetails')">
+						<span>Nucleus</span>
+						<span id="arrow-nucleusDetails">▼</span>
+					</button>
+					<div id="nucleusDetails" class="dropdown-content hidden">
+						<p>
+							The nucleus is the control center of the cell, containing the cell's DNA and managing activities such as
+							growth, metabolism, and reproduction. It is surrounded by a nuclear envelope that protects the DNA from
+							damage.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Nuclear Envelope:</b> A double membrane that separates the nucleus from the cytoplasm and regulates
+								material exchange.
+							</li>
+							<li>
+								<b>Nucleolus:</b> A dense region where ribosomal RNA (rRNA) is produced, essential for protein
+								synthesis.
+							</li>
+							<li>
+								<b>Chromatin:</b> A combination of DNA and proteins that condenses to form chromosomes during cell
+								division.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('mitochondriaDetails')">
+						<span>Mitochondria</span>
+						<span id="arrow-mitochondriaDetails">▼</span>
+					</button>
+					<div id="mitochondriaDetails" class="dropdown-content hidden">
+						<p>
+							Mitochondria are known as the powerhouse of the cell. They generate most of the cell's supply of adenosine
+							triphosphate (ATP), which is used as a source of chemical energy.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Inner and Outer Membranes:</b> The inner membrane folds to form cristae, which increase surface area
+								for ATP production.
+							</li>
+							<li>
+								<b>Matrix:</b> Contains enzymes crucial for the citric acid cycle (Krebs cycle), where energy production
+								occurs.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('endoplasmicReticulumDetails')">
+						<span>Endoplasmic Reticulum (ER)</span>
+						<span id="arrow-endoplasmicReticulumDetails">▼</span>
+					</button>
+					<div id="endoplasmicReticulumDetails" class="dropdown-content hidden">
+						<p>
+							The endoplasmic reticulum is a network of tubules within the cytoplasm of eukaryotic cells. It plays a
+							major role in the synthesis of proteins and lipids.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Rough ER:</b> Studded with ribosomes and involved in the synthesis of proteins destined for export
+								out of the cell.
+							</li>
+							<li>
+								<b>Smooth ER:</b> Lacks ribosomes and is involved in lipid synthesis, detoxification, and calcium
+								storage.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('golgiApparatusDetails')">
+						<span>Golgi Apparatus</span>
+						<span id="arrow-golgiApparatusDetails">▼</span>
+					</button>
+					<div id="golgiApparatusDetails" class="dropdown-content hidden">
+						<p>
+							The Golgi apparatus is the cell's packaging and distribution center. It modifies, sorts, and packages
+							proteins and lipids for storage or transport out of the cell.
+						</p>
+						<ul class="list">
+							<li><b>Cisternae:</b> Stacked, membrane-bound structures that process and package proteins.</li>
+							<li><b>Vesicles:</b> Transport materials to and from the Golgi apparatus.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">Your Name &copy; 2024</footer>
+
+		<script>
+			// Toggle details visibility
+			function toggleDetails(id) {
+				const details = document.getElementById(id);
+				const arrow = document.getElementById("arrow-" + id);
+				details.classList.toggle("hidden");
+				arrow.textContent = details.classList.contains("hidden") ? "▼" : "▲";
+			}
+		</script>
+	</body>
+</html>

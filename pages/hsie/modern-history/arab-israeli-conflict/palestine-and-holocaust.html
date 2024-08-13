@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Study Notes | Palestine and the Holocaust</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="nav">
+			<a href="/index.html" class="h2">Study Notes</a>
+			<a href="/pages/hsie/modern-history/index.html" class="back-button">Back to topics</a>
+		</nav>
+
+		<!-- Content -->
+		<div class="container">
+			<h1 class="h1">Palestine and the Holocaust</h1>
+			<p class="p1">
+				The Holocaust had a profound impact on Jewish immigration to Palestine and the British response to it. The
+				desperate plight of Jewish refugees fleeing Nazi persecution heightened tensions in Palestine, as Britain
+				struggled to balance its commitments to both Jews and Arabs under its mandate.
+			</p>
+
+			<!-- Detailed sections -->
+			<div class="section">
+				<div>
+					<button class="dropdown" onclick="toggleDetails('britishPoliciesDetails')">
+						<span>British Policies</span>
+						<span id="arrow-britishPoliciesDetails">▼</span>
+					</button>
+					<div id="britishPoliciesDetails" class="dropdown-content hidden">
+						<p>
+							British policies during the Holocaust were shaped by the need to maintain order in Palestine while
+							managing international pressure to allow more Jewish refugees to enter. The White Paper of 1939 restricted
+							Jewish immigration, even as the scale of the Holocaust became known.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Immigration Restrictions:</b> The 1939 White Paper limited Jewish immigration to 75,000 over five
+								years, with further immigration subject to Arab consent.
+							</li>
+							<li>
+								<b>Refugee Crisis:</b> Britain’s refusal to allow more Jewish refugees into Palestine led to criticism
+								from Zionists and international observers.
+							</li>
+							<li>
+								<b>Post-War Pressure:</b> After the war, Britain faced increasing pressure to allow Holocaust survivors
+								to settle in Palestine, leading to the eventual abandonment of the White Paper policy.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('impactDetails')">
+						<span>Impact on the Conflict</span>
+						<span id="arrow-impactDetails">▼</span>
+					</button>
+					<div id="impactDetails" class="dropdown-content hidden">
+						<p>
+							The Holocaust had a lasting impact on the Arab-Israeli conflict, as the memory of Jewish suffering fueled
+							Zionist determination to establish a secure Jewish state, while also exacerbating Arab fears of further
+							Jewish immigration.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Zionist Resolve:</b> The horrors of the Holocaust strengthened the resolve of Zionist leaders to
+								establish a Jewish state as a refuge for Jews worldwide.
+							</li>
+							<li>
+								<b>Arab Opposition:</b> The prospect of increased Jewish immigration after the war heightened Arab
+								opposition, leading to greater tensions and violence.
+							</li>
+							<li>
+								<b>International Sympathy:</b> Global sympathy for Holocaust survivors influenced international support
+								for the establishment of Israel, despite Arab objections.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">Your Name &copy; 2024</footer>
+
+		<script>
+			// Toggle details visibility
+			function toggleDetails(id) {
+				const details = document.getElementById(id);
+				const arrow = document.getElementById("arrow-" + id);
+				details.classList.toggle("hidden");
+				arrow.textContent = details.classList.contains("hidden") ? "▼" : "▲";
+			}
+		</script>
+	</body>
+</html>

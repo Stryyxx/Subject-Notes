@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Study Notes | Overview of the Arab-Israeli Conflict</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="nav">
+			<a href="/index.html" class="h2">Study Notes</a>
+			<a href="/pages/hsie/modern-history/index.html" class="back-button">Back to topics</a>
+		</nav>
+
+		<!-- Content -->
+		<div class="container">
+			<h1 class="h1">Overview of the Arab-Israeli Conflict</h1>
+			<p class="p1">
+				The Arab-Israeli conflict is a complex and ongoing struggle between the Jewish state of Israel and the Arab
+				populations in the surrounding regions, particularly the Palestinians. The conflict has deep historical roots
+				and has led to multiple wars and ongoing tensions.
+			</p>
+
+			<!-- Detailed sections -->
+			<div class="section">
+				<div>
+					<button class="dropdown" onclick="toggleDetails('historicalBackgroundDetails')">
+						<span>Historical Background</span>
+						<span id="arrow-historicalBackgroundDetails">▼</span>
+					</button>
+					<div id="historicalBackgroundDetails" class="dropdown-content hidden">
+						<p>
+							The historical background of the Arab-Israeli conflict is rooted in the late Ottoman period, British
+							colonial policies, and the rise of nationalism among both Jews and Arabs in the early 20th century.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Ottoman Rule:</b> The region was under Ottoman control until the end of World War I, with a diverse
+								population of Muslims, Christians, and Jews.
+							</li>
+							<li>
+								<b>British Mandate:</b> After WWI, the British took control of Palestine, leading to increased tensions
+								between Jews and Arabs as Jewish immigration grew.
+							</li>
+							<li>
+								<b>UN Partition Plan:</b> In 1947, the UN proposed a partition plan to create separate Jewish and Arab
+								states, leading to the 1948 Arab-Israeli War.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('keyEventsDetails')">
+						<span>Key Events</span>
+						<span id="arrow-keyEventsDetails">▼</span>
+					</button>
+					<div id="keyEventsDetails" class="dropdown-content hidden">
+						<p>
+							The conflict has been marked by several key events that have shaped its course, including wars, peace
+							efforts, and changes in leadership.
+						</p>
+						<ul class="list">
+							<li>
+								<b>1948 Arab-Israeli War:</b> Following the British withdrawal and the declaration of the state of
+								Israel, a war broke out, leading to significant territorial changes and the displacement of
+								Palestinians.
+							</li>
+							<li>
+								<b>Six-Day War (1967):</b> Israel captured significant territories, including the West Bank, Gaza Strip,
+								and East Jerusalem, increasing tensions with Arab states.
+							</li>
+							<li>
+								<b>Intifadas:</b> Palestinian uprisings against Israeli occupation, particularly in the late 1980s and
+								early 2000s, highlighted the ongoing struggle for Palestinian statehood.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">Your Name &copy; 2024</footer>
+
+		<script>
+			// Toggle details visibility
+			function toggleDetails(id) {
+				const details = document.getElementById(id);
+				const arrow = document.getElementById("arrow-" + id);
+				details.classList.toggle("hidden");
+				arrow.textContent = details.classList.contains("hidden") ? "▼" : "▲";
+			}
+		</script>
+	</body>
+</html>

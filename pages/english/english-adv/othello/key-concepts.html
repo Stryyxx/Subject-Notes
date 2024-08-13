@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Study Notes | Key Concepts</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="nav">
+			<a href="/index.html" class="h2">Study Notes</a>
+			<a href="/pages/english/english-adv/index.html" class="back-button">Back to topics</a>
+		</nav>
+
+		<!-- Content -->
+		<div class="container">
+			<h1 class="h1">Key Concepts</h1>
+			<p class="p1">
+				In the context of "Othello," several key concepts are essential for understanding the play’s themes, character
+				motivations, and societal backdrop. These concepts include Feudalism, Providentialism, Humanism,
+				Machiavellianism, and Renaissance Humanism.
+			</p>
+
+			<!-- Detailed sections -->
+			<div class="section">
+				<div>
+					<button class="dropdown" onclick="toggleDetails('feudalismDetails')">
+						<span>Feudalism</span>
+						<span id="arrow-feudalismDetails">▼</span>
+					</button>
+					<div id="feudalismDetails" class="dropdown-content hidden">
+						<p>
+							Feudalism was a hierarchical system prevalent in medieval Europe, characterized by the division of society
+							into distinct classes with specific roles and responsibilities.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Social Structure:</b> The hierarchy included the King, Nobles, Knights, and Peasants, with each class
+								having defined duties and privileges.
+							</li>
+							<li>
+								<b>Land Ownership:</b> Land was the primary source of power, with lords granting land to vassals in
+								exchange for loyalty and service.
+							</li>
+							<li>
+								<b>Military Service:</b> Knights provided military service to their lords in return for land and
+								protection.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('providentialismDetails')">
+						<span>Providentialism</span>
+						<span id="arrow-providentialismDetails">▼</span>
+					</button>
+					<div id="providentialismDetails" class="dropdown-content hidden">
+						<p>
+							Providentialism is the belief that God is the ultimate authority and that all events on Earth unfold
+							according to His divine will. This concept is reflected in the moral and ethical decisions of characters
+							within the play.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Divine Order:</b> The belief that the social and political hierarchy was ordained by God, justifying
+								the status quo.
+							</li>
+							<li>
+								<b>Moral Judgments:</b> Characters’ actions were often viewed as morally right or wrong based on their
+								alignment with perceived divine will.
+							</li>
+							<li>
+								<b>Fate vs. Free Will:</b> The tension between characters’ autonomy and the belief in a predetermined
+								divine plan is a recurring theme.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('humanismDetails')">
+						<span>Humanism</span>
+						<span id="arrow-humanismDetails">▼</span>
+					</button>
+					<div id="humanismDetails" class="dropdown-content hidden">
+						<p>
+							Humanism is a philosophical stance that emphasizes the value and agency of human beings, individually and
+							collectively. In "Othello," humanism is reflected in the focus on personal honor, integrity, and the
+							revival of classical ideas.
+						</p>
+						<ul class="list">
+							<li><b>Individualism:</b> Emphasis on the individual’s capacity for reason and self-determination.</li>
+							<li>
+								<b>Classical Influences:</b> The revival of Greco-Roman ideals, focusing on human potential and
+								achievements.
+							</li>
+							<li>
+								<b>Secularism:</b> A shift away from purely religious explanations of the world towards a more
+								human-centered understanding.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('machiavellianismDetails')">
+						<span>Machiavellianism</span>
+						<span id="arrow-machiavellianismDetails">▼</span>
+					</button>
+					<div id="machiavellianismDetails" class="dropdown-content hidden">
+						<p>
+							Machiavellianism is characterized by cunning, manipulation, and a pragmatic approach to power. It is named
+							after Niccolò Machiavelli, whose writings advocate for the use of any means necessary to achieve and
+							maintain power.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Manipulation:</b> Using deceit and manipulation to achieve one’s goals, often at the expense of
+								others.
+							</li>
+							<li><b>Pragmatism:</b> A focus on practical outcomes rather than moral or ethical considerations.</li>
+							<li>
+								<b>Power Dynamics:</b> The pursuit of power as the ultimate objective, with little regard for
+								conventional morality.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('renaissanceHumanismDetails')">
+						<span>Renaissance Humanism</span>
+						<span id="arrow-renaissanceHumanismDetails">▼</span>
+					</button>
+					<div id="renaissanceHumanismDetails" class="dropdown-content hidden">
+						<p>
+							Renaissance Humanism was an intellectual movement that focused on the study of classical texts and the
+							belief in the potential of human achievement. It marked a shift from the medieval focus on divine
+							authority to a greater emphasis on human potential and achievement.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Classical Revival:</b> A renewed interest in the literature, art, and philosophy of ancient Greece
+								and Rome.
+							</li>
+							<li><b>Human Dignity:</b> The belief in the inherent worth and potential of each individual.</li>
+							<li>
+								<b>Secular Knowledge:</b> An emphasis on education and the pursuit of knowledge outside of religious
+								contexts.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">Your Name &copy; 2024</footer>
+
+		<script>
+			// Toggle details visibility
+			function toggleDetails(id) {
+				const details = document.getElementById(id);
+				const arrow = document.getElementById("arrow-" + id);
+				details.classList.toggle("hidden");
+				arrow.textContent = details.classList.contains("hidden") ? "▼" : "▲";
+			}
+		</script>
+	</body>
+</html>

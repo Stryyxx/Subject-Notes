@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Study Notes | Character Archetypes</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="nav">
+			<a href="/index.html" class="h2">Study Notes</a>
+			<a href="/pages/english/english-adv/index.html" class="back-button">Back to topics</a>
+		</nav>
+
+		<!-- Content -->
+		<div class="container">
+			<h1 class="h1">Character Archetypes</h1>
+			<p class="p1">
+				In Othello, Shakespeare uses a range of character archetypes to explore themes of power, jealousy, love, and
+				betrayal. Each character plays a crucial role in the development of the plot and the ultimate tragedy.
+			</p>
+
+			<!-- Detailed sections -->
+			<div class="section">
+				<div>
+					<button class="dropdown" onclick="toggleDetails('othelloDetails')">
+						<span>Othello</span>
+						<span id="arrow-othelloDetails">▼</span>
+					</button>
+					<div id="othelloDetails" class="dropdown-content hidden">
+						<p>
+							Othello, the tragic hero, is a Moorish general in the Venetian army. He is noble and honorable but becomes
+							a victim of his own insecurities and Iago's manipulations.
+						</p>
+						<ul class="list">
+							<li>
+								<b>The Tragic Hero:</b> Othello's noble status and virtues are contrasted with his tragic flaw of
+								jealousy.
+							</li>
+							<li>
+								<b>Outsider Status:</b> Despite his rank, Othello is an outsider due to his race, which Iago exploits.
+							</li>
+							<li>
+								<b>Jealousy:</b> Othello's jealousy, fueled by Iago, drives the plot towards its tragic conclusion.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('iagoDetails')">
+						<span>Iago</span>
+						<span id="arrow-iagoDetails">▼</span>
+					</button>
+					<div id="iagoDetails" class="dropdown-content hidden">
+						<p>
+							Iago is the play's antagonist and a Machiavellian villain. He is manipulative, deceitful, and driven by a
+							desire for power and revenge.
+						</p>
+						<ul class="list">
+							<li>
+								<b>The Villain:</b> Iago's actions are motivated by a deep-seated malice and a desire to ruin Othello.
+							</li>
+							<li>
+								<b>Manipulation:</b> Iago expertly manipulates the other characters, especially Othello, to achieve his
+								goals.
+							</li>
+							<li><b>Jealousy:</b> Iago's own jealousy and resentment drive his schemes against Othello.</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('desdemonaDetails')">
+						<span>Desdemona</span>
+						<span id="arrow-desdemonaDetails">▼</span>
+					</button>
+					<div id="desdemonaDetails" class="dropdown-content hidden">
+						<p>
+							Desdemona is Othello's wife, known for her beauty, innocence, and loyalty. She becomes an innocent victim
+							of Othello's jealousy and Iago's deceit.
+						</p>
+						<ul class="list">
+							<li><b>The Innocent:</b> Desdemona represents purity and goodness in the play.</li>
+							<li><b>Loyalty:</b> Despite Othello's suspicions, Desdemona remains loyal and devoted to him.</li>
+							<li>
+								<b>Tragic Victim:</b> Desdemona's tragic fate is a result of Othello's misguided actions and Iago's
+								manipulation.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('roderigoDetails')">
+						<span>Roderigo</span>
+						<span id="arrow-roderigoDetails">▼</span>
+					</button>
+					<div id="roderigoDetails" class="dropdown-content hidden">
+						<p>
+							Roderigo is a wealthy Venetian who is in love with Desdemona. He becomes a pawn in Iago's schemes,
+							manipulated into assisting with Iago's plot against Othello.
+						</p>
+						<ul class="list">
+							<li><b>The Fool:</b> Roderigo's naivety makes him an easy target for Iago's manipulation.</li>
+							<li><b>Unrequited Love:</b> His unrequited love for Desdemona leads him to make foolish decisions.</li>
+							<li><b>Victim of Deceit:</b> Roderigo's blind trust in Iago ultimately leads to his downfall.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">Your Name &copy; 2024</footer>
+
+		<script>
+			// Toggle details visibility
+			function toggleDetails(id) {
+				const details = document.getElementById(id);
+				const arrow = document.getElementById("arrow-" + id);
+				details.classList.toggle("hidden");
+				arrow.textContent = details.classList.contains("hidden") ? "▼" : "▲";
+			}
+		</script>
+	</body>
+</html>

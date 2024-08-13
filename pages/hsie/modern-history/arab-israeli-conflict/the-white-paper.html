@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Study Notes | The White Paper</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="nav">
+			<a href="/index.html" class="h2">Study Notes</a>
+			<a href="/pages/hsie/modern-history/index.html" class="back-button">Back to topics</a>
+		</nav>
+
+		<!-- Content -->
+		<div class="container">
+			<h1 class="h1">The White Paper</h1>
+			<p class="p1">
+				The 1939 White Paper was a policy document issued by the British government in response to the escalating
+				tensions in Palestine. It sought to limit Jewish immigration and land purchases in Palestine, while also
+				proposing the establishment of an independent Palestinian state within ten years. The White Paper was seen as a
+				betrayal by Zionist leaders and was met with widespread opposition from the Jewish community.
+			</p>
+
+			<!-- Detailed sections -->
+			<div class="section">
+				<div>
+					<button class="dropdown" onclick="toggleDetails('contentDetails')">
+						<span>Content of the White Paper</span>
+						<span id="arrow-contentDetails">▼</span>
+					</button>
+					<div id="contentDetails" class="dropdown-content hidden">
+						<p>
+							The White Paper outlined British policy on several key issues, including immigration, land ownership, and
+							the future political status of Palestine. It marked a significant shift from earlier British support for
+							the Zionist project.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Immigration Limits:</b> The White Paper limited Jewish immigration to 75,000 over the next five
+								years, with further immigration requiring Arab consent.
+							</li>
+							<li>
+								<b>Land Restrictions:</b> It restricted Jewish land purchases in certain areas of Palestine, aiming to
+								prevent further displacement of Arab populations.
+							</li>
+							<li>
+								<b>Political Future:</b> The document proposed the establishment of a single independent state in
+								Palestine within ten years, with power shared between Jews and Arabs.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('impactDetails')">
+						<span>Impact on Jewish-Arab Relations</span>
+						<span id="arrow-impactDetails">▼</span>
+					</button>
+					<div id="impactDetails" class="dropdown-content hidden">
+						<p>
+							The White Paper had a significant impact on Jewish-Arab relations, intensifying tensions as both
+							communities saw the document as a threat to their national aspirations.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Jewish Opposition:</b> Zionist leaders condemned the White Paper as a betrayal of the Balfour
+								Declaration and the Jewish people, leading to increased tensions with Britain.
+							</li>
+							<li>
+								<b>Arab Reaction:</b> While some Arab leaders saw the White Paper as a positive step, others rejected
+								it, demanding more immediate independence and complete cessation of Jewish immigration.
+							</li>
+							<li>
+								<b>Escalation of Violence:</b> The restrictions on immigration and land purchases led to an escalation
+								in violence between Jews, Arabs, and the British authorities.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">Your Name &copy; 2024</footer>
+
+		<script>
+			// Toggle details visibility
+			function toggleDetails(id) {
+				const details = document.getElementById(id);
+				const arrow = document.getElementById("arrow-" + id);
+				details.classList.toggle("hidden");
+				arrow.textContent = details.classList.contains("hidden") ? "▼" : "▲";
+			}
+		</script>
+	</body>
+</html>

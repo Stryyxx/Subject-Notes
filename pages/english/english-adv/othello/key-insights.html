@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Study Notes | Key Insights</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="nav">
+			<a href="/index.html" class="h2">Study Notes</a>
+			<a href="/pages/english/english-adv/index.html" class="back-button">Back to topics</a>
+		</nav>
+
+		<!-- Content -->
+		<div class="container">
+			<h1 class="h1">Key Insights</h1>
+			<p class="p1">
+				Othello offers deep insights into human nature, societal ideologies, and the consequences of unchecked emotions.
+				The play is a rich exploration of power dynamics, jealousy, love, and the destructive potential of manipulation.
+			</p>
+
+			<!-- Detailed sections -->
+			<div class="section">
+				<div>
+					<button class="dropdown" onclick="toggleDetails('powerDynamicsDetails')">
+						<span>Power Dynamics</span>
+						<span id="arrow-powerDynamicsDetails">▼</span>
+					</button>
+					<div id="powerDynamicsDetails" class="dropdown-content hidden">
+						<p>
+							Power dynamics play a central role in Othello, influencing the relationships between characters and
+							driving the plot. The imbalance of power between Othello, Desdemona, and Iago creates a fertile ground for
+							manipulation and tragedy.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Othello's Authority:</b> As a general, Othello holds significant power, but his status as a Moor
+								makes him vulnerable.
+							</li>
+							<li>
+								<b>Iago's Manipulation:</b> Iago leverages his understanding of power dynamics to control and deceive
+								those around him.
+							</li>
+							<li>
+								<b>Gender and Power:</b> Desdemona's power is limited by her gender, making her an easy target for
+								Othello's jealousy.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('jealousyAndLoveDetails')">
+						<span>Jealousy and Love</span>
+						<span id="arrow-jealousyAndLoveDetails">▼</span>
+					</button>
+					<div id="jealousyAndLoveDetails" class="dropdown-content hidden">
+						<p>
+							Othello explores the complex relationship between jealousy and love. Othello's love for Desdemona is
+							sincere but becomes tainted by jealousy, leading to destructive consequences.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Othello's Love:</b> Initially pure and strong, Othello's love for Desdemona is corrupted by Iago's
+								insinuations.
+							</li>
+							<li>
+								<b>The Power of Jealousy:</b> Jealousy consumes Othello, distorting his perception of reality and
+								driving him to irrational actions.
+							</li>
+							<li>
+								<b>Iago's Exploitation:</b> Iago exploits Othello's love and jealousy to manipulate him into committing
+								tragic acts.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('manipulationAndDeceitDetails')">
+						<span>Manipulation and Deceit</span>
+						<span id="arrow-manipulationAndDeceitDetails">▼</span>
+					</button>
+					<div id="manipulationAndDeceitDetails" class="dropdown-content hidden">
+						<p>
+							Manipulation and deceit are central themes in Othello. Iago's ability to manipulate the perceptions and
+							actions of others is the driving force behind the tragedy.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Iago's Mastery:</b> Iago's skill in deceit allows him to control the narrative and manipulate the
+								other characters.
+							</li>
+							<li>
+								<b>Othello's Vulnerability:</b> Othello's trust in Iago makes him susceptible to manipulation, leading
+								to his downfall.
+							</li>
+							<li>
+								<b>Desdemona's Innocence:</b> Desdemona's inability to recognize Iago's deceit further isolates her and
+								leads to her tragic fate.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">Your Name &copy; 2024</footer>
+
+		<script>
+			// Toggle details visibility
+			function toggleDetails(id) {
+				const details = document.getElementById(id);
+				const arrow = document.getElementById("arrow-" + id);
+				details.classList.toggle("hidden");
+				arrow.textContent = details.classList.contains("hidden") ? "▼" : "▲";
+			}
+		</script>
+	</body>
+</html>

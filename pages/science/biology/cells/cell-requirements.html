@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Study Notes | Cell Requirements</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="nav">
+			<a href="/index.html" class="h2">Study Notes</a>
+			<a href="/pages/science/biology/index.html" class="back-button">Back to topics</a>
+		</nav>
+
+		<!-- Content -->
+		<div class="container">
+			<h1 class="h1">Cell Requirements</h1>
+			<p class="p1">
+				Cells require various organic and inorganic compounds to sustain life processes. These compounds are involved in
+				structural formation, energy production, and metabolic activities.
+			</p>
+
+			<!-- Detailed sections -->
+			<div class="section">
+				<div>
+					<button class="dropdown" onclick="toggleDetails('organicCompoundsDetails')">
+						<span>Organic Compounds</span>
+						<span id="arrow-organicCompoundsDetails">▼</span>
+					</button>
+					<div id="organicCompoundsDetails" class="dropdown-content hidden">
+						<p>
+							Organic compounds are molecules that contain carbon and are found in living organisms. They are essential
+							for various cellular functions.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Carbohydrates:</b> Serve as a primary energy source and are involved in cell structure (e.g.,
+								glucose, cellulose).
+							</li>
+							<li>
+								<b>Lipids:</b> Store energy, form cell membranes, and act as signaling molecules (e.g., fats,
+								phospholipids).
+							</li>
+							<li>
+								<b>Proteins:</b> Perform a wide range of functions, including catalysis (enzymes), structure (collagen),
+								and transport (hemoglobin).
+							</li>
+							<li><b>Nucleic Acids:</b> Store and transmit genetic information (e.g., DNA, RNA).</li>
+							<li>
+								<b>Vitamins:</b> Organic molecules that act as coenzymes or precursors for coenzymes, facilitating
+								enzymatic reactions.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('inorganicCompoundsDetails')">
+						<span>Inorganic Compounds</span>
+						<span id="arrow-inorganicCompoundsDetails">▼</span>
+					</button>
+					<div id="inorganicCompoundsDetails" class="dropdown-content hidden">
+						<p>
+							Inorganic compounds, such as water and minerals, are crucial for various biochemical processes within
+							cells. They do not contain carbon-hydrogen bonds.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Water:</b> The most abundant molecule in cells, vital for maintaining structure, temperature, and
+								facilitating chemical reactions.
+							</li>
+							<li>
+								<b>Oxygen:</b> Essential for cellular respiration, allowing cells to extract energy from organic
+								molecules.
+							</li>
+							<li>
+								<b>Carbon Dioxide:</b> A byproduct of respiration, also used by plants in photosynthesis to produce
+								glucose.
+							</li>
+							<li>
+								<b>Minerals:</b> Inorganic elements required in small amounts for various cellular functions (e.g.,
+								calcium, iron, magnesium).
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">Your Name &copy; 2024</footer>
+
+		<script>
+			// Toggle details visibility
+			function toggleDetails(id) {
+				const details = document.getElementById(id);
+				const arrow = document.getElementById("arrow-" + id);
+				details.classList.toggle("hidden");
+				arrow.textContent = details.classList.contains("hidden") ? "▼" : "▲";
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Study Notes | Origins of the Arab-Israeli Conflict</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="nav">
+			<a href="/index.html" class="h2">Study Notes</a>
+			<a href="/pages/hsie/modern-history/index.html" class="back-button">Back to topics</a>
+		</nav>
+
+		<!-- Content -->
+		<div class="container">
+			<h1 class="h1">Origins of the Arab-Israeli Conflict</h1>
+			<p class="p1">
+				The origins of the Arab-Israeli conflict are deeply rooted in historical, religious, and political disputes.
+				Both the Jewish and Palestinian communities have longstanding claims to the land, leading to a complex and
+				ongoing conflict.
+			</p>
+
+			<!-- Detailed sections -->
+			<div class="section">
+				<div>
+					<button class="dropdown" onclick="toggleDetails('israeliPerspectiveDetails')">
+						<span>Israeli Perspective</span>
+						<span id="arrow-israeliPerspectiveDetails">▼</span>
+					</button>
+					<div id="israeliPerspectiveDetails" class="dropdown-content hidden">
+						<p>
+							From the Israeli perspective, the land of Palestine is historically and religiously significant, viewed as
+							the ancestral homeland of the Jewish people.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Zionism:</b> A movement advocating for the re-establishment of a Jewish homeland in Palestine, rooted
+								in the belief of a historical connection.
+							</li>
+							<li>
+								<b>Jerusalem:</b> Considered the eternal capital of Israel, with deep religious significance in Judaism.
+							</li>
+							<li>
+								<b>Immigration:</b> Waves of Jewish immigration to Palestine in the late 19th and early 20th centuries,
+								driven by persecution in Europe.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('palestinianPerspectiveDetails')">
+						<span>Palestinian Perspective</span>
+						<span id="arrow-palestinianPerspectiveDetails">▼</span>
+					</button>
+					<div id="palestinianPerspectiveDetails" class="dropdown-content hidden">
+						<p>
+							From the Palestinian perspective, the land is seen as their ancestral home, with a strong sense of
+							national identity and resistance to Zionism and Jewish immigration.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Palestinian Identity:</b> The development of a distinct Palestinian national identity in response to
+								Zionist movements.
+							</li>
+							<li>
+								<b>Resistance:</b> Opposition to the influx of Jewish immigrants, seen as a threat to the Arab majority
+								in the region.
+							</li>
+							<li>
+								<b>Land Rights:</b> Strong emphasis on the right to land, viewed as being taken unjustly during the
+								establishment of Israel.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">Your Name &copy; 2024</footer>
+
+		<script>
+			// Toggle details visibility
+			function toggleDetails(id) {
+				const details = document.getElementById(id);
+				const arrow = document.getElementById("arrow-" + id);
+				details.classList.toggle("hidden");
+				arrow.textContent = details.classList.contains("hidden") ? "▼" : "▲";
+			}
+		</script>
+	</body>
+</html>

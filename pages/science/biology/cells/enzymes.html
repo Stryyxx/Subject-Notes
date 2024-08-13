@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Study Notes | Enzymes</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="nav">
+			<a href="/index.html" class="h2">Study Notes</a>
+			<a href="/pages/science/biology/index.html" class="back-button">Back to topics</a>
+		</nav>
+
+		<!-- Content -->
+		<div class="container">
+			<h1 class="h1">Enzymes</h1>
+			<p class="p1">
+				Enzymes are biological catalysts that speed up chemical reactions in cells without being consumed. They play a
+				crucial role in metabolism, facilitating the conversion of substrates into products.
+			</p>
+
+			<!-- Detailed sections -->
+			<div class="section">
+				<div>
+					<button class="dropdown" onclick="toggleDetails('roleEnzymesDetails')">
+						<span>Role of Enzymes</span>
+						<span id="arrow-roleEnzymesDetails">▼</span>
+					</button>
+					<div id="roleEnzymesDetails" class="dropdown-content hidden">
+						<p>
+							Enzymes lower the activation energy of chemical reactions, allowing them to proceed faster. Each enzyme is
+							specific to a particular reaction or set of reactions.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Active Site:</b> The region on the enzyme where the substrate binds, facilitating the reaction.
+							</li>
+							<li>
+								<b>Substrate Specificity:</b> Enzymes are specific to their substrates, meaning each enzyme only
+								catalyzes a specific reaction.
+							</li>
+							<li>
+								<b>Cofactors and Coenzymes:</b> Non-protein molecules that assist in enzyme activity, often by carrying
+								chemical groups between reactions.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<button class="dropdown" onclick="toggleDetails('sensitivityFunctionDetails')">
+						<span>Sensitivity and Function</span>
+						<span id="arrow-sensitivityFunctionDetails">▼</span>
+					</button>
+					<div id="sensitivityFunctionDetails" class="dropdown-content hidden">
+						<p>
+							Enzymes are sensitive to environmental conditions such as temperature, pH, and substrate concentration.
+							These factors affect the enzyme's activity and efficiency.
+						</p>
+						<ul class="list">
+							<li>
+								<b>Temperature:</b> Each enzyme has an optimal temperature at which it functions most efficiently; too
+								high or too low can denature the enzyme.
+							</li>
+							<li>
+								<b>pH:</b> Enzymes also have an optimal pH range; deviations from this range can reduce activity or
+								denature the enzyme.
+							</li>
+							<li>
+								<b>Concentration:</b> Increasing substrate concentration increases reaction rate to a point, after which
+								the enzymes become saturated.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">Your Name &copy; 2024</footer>
+
+		<script>
+			// Toggle details visibility
+			function toggleDetails(id) {
+				const details = document.getElementById(id);
+				const arrow = document.getElementById("arrow-" + id);
+				details.classList.toggle("hidden");
+				arrow.textContent = details.classList.contains("hidden") ? "▼" : "▲";
+			}
+		</script>
+	</body>
+</html>
